@@ -1,0 +1,90 @@
+:root {
+  --bg-color: #fffefd;
+  --primary-color: #141b29;
+  --secondary-color: #445e90;
+  --tertiary-color: #6684bd;
+  --highlight-color: #b2c7ee;
+  --chip-color: #f6f6f6;
+  --text-gradient: linear-gradient(92.33deg, #141b29 0%, #6684bd 100%);
+  --open-button-gradient: linear-gradient(45deg, #b4c7eb 0%, #fffefd 100%);
+  --card-gradient: linear-gradient(45deg, #e0ebff 0%, #fffefd 100%);
+  --project-gradient: linear-gradient(
+    360deg,
+    #e3edff 0%,
+    rgba(237, 243, 254, 0.9) 35.94%,
+    rgba(255, 254, 253, 0) 100%
+  );
+  --blur: rgba(255, 255, 255, 0.3);
+  --shadow: drop-shadow(0px 10px 20px rgba(20, 27, 41, 0.1));
+}
+
+[data-theme="dark"] {
+  --bg-color: #141b29;
+  --primary-color: #fffefd;
+  --secondary-color: #b2c7ee;
+  --tertiary-color: #bfd1f2;
+  --highlight-color: #506a9c;
+  --chip-color: #26324a;
+  --text-gradient: linear-gradient(92.33deg, #fffefd 0%, #b2c7ee 100%);
+  --open-button-gradient: linear-gradient(45deg, #475a7c 0%, #141b29 100%);
+  --card-gradient: linear-gradient(45deg, #475a7c 0%, #141b29 100%);
+  --project-gradient: linear-gradient(
+    360deg,
+    rgba(42, 56, 85, 0.9) 0%,
+    rgba(42, 56, 85, 0.6) 44.27%,
+    rgba(20, 27, 41, 0) 100%
+  );
+  --blur: rgba(0, 0, 0, 0.4);
+  --shadow: drop-shadow(0px 10px 20px rgba(255, 252, 245, 0.1));
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("./fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("./fonts/Satoshi-Variable.woff") format("woff"),
+    url("./fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("./fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+    url("./fonts/Satoshi-VariableItalic.woff") format("woff"),
+    url("./fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--bg-color);
+  font-family: "Satoshi-Variable";
+  background-color: var(--bg-color);
+  margin-bottom: 18rem;
+}
+
+.no-scrolling {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+  margin-bottom: 0;
+}
