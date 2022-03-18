@@ -71,7 +71,7 @@
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 3rem 2rem 1rem;
+    padding: 3rem 2.4rem 1rem;
   }
 
   .menu {
@@ -81,12 +81,13 @@
 
   .menu-btn {
     padding: 1.2rem 3.2rem;
+    margin-left: 1.8rem;
   }
 }
 
 @media (max-width: 360px) {
   .navbar {
-    padding: 2rem 1.5rem 1rem;
+    padding: 2rem 2rem 1rem;
   }
 
   .menu-btn {
@@ -96,5 +97,11 @@
 
   .menu-btn p {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .navbar {
+    padding: 2rem 1.8rem 1rem;
   }
 }
