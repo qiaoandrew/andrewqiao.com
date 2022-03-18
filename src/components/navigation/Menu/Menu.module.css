@@ -38,9 +38,10 @@
   font-size: 4.8rem;
   color: var(--primary-color);
   font-weight: 700;
-  text-decoration: none;
+
   display: block;
   transition: opacity 0.3s ease-in-out;
+  user-select: none;
 }
 
 @media (max-height: 640px) {
@@ -57,6 +58,12 @@
 
 .menu__list a:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 786px) {
+  .menu__list a:hover {
+    opacity: 1;
+  }
 }
 
 .menu__list a:not(:last-of-type) {
@@ -89,6 +96,12 @@
 
 .close:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 786px) {
+  .close:hover {
+    transform: none;
+  }
 }
 
 .socials {
@@ -130,6 +143,12 @@
 
 .socials__button:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 786px) {
+  .socials__button:hover {
+    transform: none;
+  }
 }
 
 .socials__icon {
