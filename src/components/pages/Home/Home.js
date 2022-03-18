@@ -1,7 +1,13 @@
-import classes from "./Home.module.css";
+import { Fragment } from 'react';
+import Nav from '../../navigation/Nav/Nav';
+import classes from './Home.module.css';
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Fragment>
+      <Nav />
+    </Fragment>
+  );
 };
 
 export default Home;

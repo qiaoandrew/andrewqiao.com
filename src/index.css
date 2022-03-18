@@ -3,7 +3,7 @@
   --primary-color: #141b29;
   --secondary-color: #445e90;
   --tertiary-color: #6684bd;
-  --highlight-color: #b2c7ee;
+  --highlight-color: #ced9ee;
   --chip-color: #f6f6f6;
   --text-gradient: linear-gradient(92.33deg, #141b29 0%, #6684bd 100%);
   --open-button-gradient: linear-gradient(45deg, #b4c7eb 0%, #fffefd 100%);
@@ -16,14 +16,18 @@
   );
   --blur: rgba(255, 255, 255, 0.3);
   --shadow: drop-shadow(0px 10px 20px rgba(20, 27, 41, 0.1));
+  --primary-icon: invert(8%) sepia(48%) saturate(603%) hue-rotate(182deg)
+    brightness(95%) contrast(94%);
+  --tertiary-icon: invert(53%) sepia(54%) saturate(418%) hue-rotate(181deg)
+    brightness(86%) contrast(80%);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --bg-color: #141b29;
   --primary-color: #fffefd;
   --secondary-color: #b2c7ee;
   --tertiary-color: #bfd1f2;
-  --highlight-color: #506a9c;
+  --highlight-color: #273857;
   --chip-color: #26324a;
   --text-gradient: linear-gradient(92.33deg, #fffefd 0%, #b2c7ee 100%);
   --open-button-gradient: linear-gradient(45deg, #475a7c 0%, #141b29 100%);
@@ -36,23 +40,27 @@
   );
   --blur: rgba(0, 0, 0, 0.4);
   --shadow: drop-shadow(0px 10px 20px rgba(255, 252, 245, 0.1));
+  --primary-icon: invert(96%) sepia(93%) saturate(193%) hue-rotate(292deg)
+    brightness(104%) contrast(101%);
+  --tertiary-icon: invert(82%) sepia(17%) saturate(422%) hue-rotate(182deg)
+    brightness(99%) contrast(92%);
 }
 
 @font-face {
-  font-family: "Satoshi-Variable";
-  src: url("./fonts/Satoshi-Variable.woff2") format("woff2"),
-    url("./fonts/Satoshi-Variable.woff") format("woff"),
-    url("./fonts/Satoshi-Variable.ttf") format("truetype");
+  font-family: 'Satoshi-Variable';
+  src: url('./fonts/Satoshi-Variable.woff2') format('woff2'),
+    url('./fonts/Satoshi-Variable.woff') format('woff'),
+    url('./fonts/Satoshi-Variable.ttf') format('truetype');
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Satoshi-VariableItalic";
-  src: url("./fonts/Satoshi-VariableItalic.woff2") format("woff2"),
-    url("./fonts/Satoshi-VariableItalic.woff") format("woff"),
-    url("./fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-family: 'Satoshi-VariableItalic';
+  src: url('./fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+    url('./fonts/Satoshi-VariableItalic.woff') format('woff'),
+    url('./fonts/Satoshi-VariableItalic.ttf') format('truetype');
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
@@ -63,7 +71,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 html {
@@ -77,14 +86,26 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: var(--bg-color);
-  font-family: "Satoshi-Variable";
+  font-family: 'Satoshi-Variable';
   background-color: var(--bg-color);
-  margin-bottom: 18rem;
+  min-height: 100vh;
 }
 
 .no-scrolling {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
-  margin-bottom: 0;
+}
+
+.blur--unhidden {
+  visibility: visible;
+}
+
+.blur--show {
+  opacity: 1;
+}
+
+.menu--show {
+  transform: translateX(0);
+  opacity: 1;
 }

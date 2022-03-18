@@ -1,0 +1,21 @@
+.toggle {
+  background-color: #141b29;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #b2c7ee;
+}
+
+.toggle div {
+  height: calc(2.5rem - 2px);
+  width: calc(1.25rem - 1px);
+  background-color: #b2c7ee;
+  border-radius: 10rem 0 0 10rem;
+  pointer-events: none;
+}
+
+.toggle-dark {
+  transform: rotate(180deg);
+}

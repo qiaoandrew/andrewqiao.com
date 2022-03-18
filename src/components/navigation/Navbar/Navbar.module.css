@@ -1,0 +1,83 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 6rem 1rem;
+  align-items: center;
+  z-index: 0;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: inline-block;
+  background-image: var(--text-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+  user-select: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  padding: 1.4rem 3.6rem;
+  border-radius: 10rem;
+  outline: 1px solid var(--primary-color);
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.menu-btn p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  user-select: none;
+}
+
+.menu-btn:hover {
+  background-color: var(--highlight-color);
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    margin: 5rem 5rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    margin: 4rem 4.5rem 1rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .navbar {
+    margin: 4rem 3.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    margin: 3.5rem 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    margin: 3rem 2rem 1rem;
+  }
+
+  .menu {
+    padding: 1.2rem 2.5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    margin: 2rem 2rem 1rem;
+  }
+}
