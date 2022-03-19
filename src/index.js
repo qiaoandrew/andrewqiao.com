@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-
 import { ThemeContextProvider } from './store/theme-context';
-
+import ScrollToTop from './components/utilities/ScrollToTop/ScrollToTop';
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <ThemeContextProvider>
         <App />
       </ThemeContextProvider>

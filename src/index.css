@@ -86,7 +86,7 @@ html {
 
 body {
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   background-color: var(--bg-color);
   font-family: 'Satoshi-Variable';
