@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import ThemeContext from '../../../../store/theme-context';
 import Nav from '../../../navigation/Nav/Nav';
 import Button from '../../../UI/Button/Button';
 import classes from './Landing.module.css';
@@ -5,6 +7,8 @@ import wavesLight from '../../../../img/waves/waves-light.svg';
 import wavesDark from '../../../../img/waves/waves-dark.svg';
 
 const Landing = () => {
+  const themeContext = useContext(ThemeContext);
+
   return (
     <div className={classes.landing}>
       <Nav />
@@ -19,11 +23,7 @@ const Landing = () => {
         </Button>
       </div>
       <img
-        src={
-          document.documentElement.getAttribute('data-theme') === 'light'
-            ? wavesLight
-            : wavesDark
-        }
+        src={themeContext.theme === 'light' ? wavesLight : wavesDark}
         className={`${classes.waves}`}
         id="waves"
         alt="Waves"

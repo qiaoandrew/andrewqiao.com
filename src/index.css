@@ -116,12 +116,12 @@ a {
   opacity: 1;
 }
 
-.side-margin {
+.container {
   margin: 0 8rem;
 }
 
 @media (max-width: 1400px) {
-  .side-margin {
+  .container {
     margin: 0 6rem;
   }
 }
@@ -131,7 +131,7 @@ a {
     margin-bottom: 16rem;
   }
 
-  .side-margin {
+  .container {
     margin: 0 4rem;
   }
 }
@@ -141,7 +141,7 @@ a {
     margin-bottom: 10rem;
   }
 
-  .side-margin {
+  .container {
     margin: 0 2rem;
   }
 }
