@@ -1,49 +1,49 @@
-import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { about } from '../../../constants/constants';
 import closeIcon from '../../../img/icons/close-icon.svg';
-import classes from './Menu.module.css';
+import './Menu.css';
 
+// Side menu
 const Menu = (props) => {
   return (
-    <Fragment>
-      <div className={`${classes.blur} blur`} onClick={props.toggleMenu} />
-      <div className={`${classes.menu} menu`}>
-        <img
-          src={closeIcon}
-          alt="Close button"
-          className={classes.close}
-          onClick={props.toggleMenu}
-        />
-        <div className={classes.menu__list}>
+    <div className="menu">
+      <img
+        src={closeIcon}
+        alt="Close button"
+        className="menu__close"
+        onClick={props.toggleMenu}
+      />
+      <ul className="menu__list">
+        <li className="menu__list-item">
           <Link to="/">Home</Link>
+        </li>
+        <li className="menu__list-item">
           <Link to="/#projects">Projects</Link>
+        </li>
+        <li className="menu__list-item">
           <Link to="/#experiences">Experiences</Link>
+        </li>
+        <li className="menu__list-item">
           <Link to="/#about">About</Link>
-        </div>
-        <div className={classes.email}></div>
-        <div className={classes.socials}>
-          <p>andrewqiao2004@gmail.com</p>
-          <div className={classes['social__buttons']}>
-            {about.socials.map((social, i) => (
-              <a
-                href={social.link}
-                target="_blank"
-                rel="noreferrer"
-                className={classes['socials__button']}
-                key={`social${i}`}
-              >
-                <img
-                  src={social.icon}
-                  alt=""
-                  className={classes['socials__icon']}
-                />
-              </a>
-            ))}
-          </div>
+        </li>
+      </ul>
+      <div className="menu__socials">
+        <p className="menu__email">andrewqiao2004@gmail.com</p>
+        <div className="menu__social-buttons">
+          {about.socials.map((social, i) => (
+            <a
+              href={social.link}
+              target="_blank"
+              rel="noreferrer"
+              className="menu__social-button"
+              key={`social${i}`}
+            >
+              <img src={social.icon} alt="" className="menu__social-icon" />
+            </a>
+          ))}
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

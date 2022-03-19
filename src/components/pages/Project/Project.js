@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import Nav from '../../navigation/Nav/Nav';
-import classes from './Project.module.css';
+import './Project.css';
 
 const Project = (props) => {
   return (

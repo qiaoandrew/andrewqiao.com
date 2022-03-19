@@ -101,14 +101,7 @@ a {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
-}
-
-.blur--unhidden {
-  visibility: visible;
-}
-
-.blur--show {
-  opacity: 1;
+  margin-bottom: 0;
 }
 
 .menu--show {

@@ -33,7 +33,7 @@
   line-height: 1.5;
 }
 
-.waves {
+.landing__waves {
   width: max(1366px, 100vw);
   position: absolute;
   top: 55%;

@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import classes from './Button.module.css';
+import './Button.css';
 
 const Button = (props) => {
   return props.isLink ? (
-    <Link to={props.link} className={classes.button}>
-      <p>{props.children}</p>
+    <Link to={props.link} className="button">
+      <p className="button__text">{props.children}</p>
     </Link>
   ) : (
-    <a href={props.link} className={classes.button}>
-      <p>{props.children}</p>
+    <a href={props.link} className="button">
+      <p className="button__text">{props.children}</p>
     </a>
   );
 };

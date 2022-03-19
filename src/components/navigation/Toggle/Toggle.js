@@ -1,14 +1,14 @@
 import { useContext } from 'react';
 import ThemeContext from '../../../store/theme-context';
-import classes from './Toggle.module.css';
+import './Toggle.css';
 
 const Toggle = () => {
   const themeContext = useContext(ThemeContext);
 
   return (
     <div
-      className={`${classes.toggle} ${
-        themeContext.theme === 'light' ? '' : classes['toggle-dark']
+      className={`toggle ${
+        themeContext.theme === 'light' ? '' : 'toggle-dark'
       }`}
       onClick={
         themeContext.theme === 'light'

@@ -1,0 +1,146 @@
+.menu {
+  height: 100vh;
+  width: min(100vw, 54rem);
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.5, 0, 0, 0.75);
+  z-index: 2;
+  opacity: 0;
+}
+
+.menu__list {
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.menu__list-item {
+  font-size: 4.8rem;
+  font-weight: 700;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+  user-select: none;
+}
+
+.menu__list-item a {
+  color: var(--primary-color);
+}
+
+.menu__close:hover {
+  transform: scale(1.05);
+}
+
+.menu__list-item:not(:last-of-type) {
+  margin-bottom: 2.4rem;
+}
+
+.menu__list-item:hover {
+  opacity: 0.6;
+}
+
+.menu__email {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+  margin-bottom: 2rem;
+}
+
+.menu__socials {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__social-buttons {
+  display: flex;
+}
+
+.menu__social-button {
+  padding: 1.2rem;
+  background-color: var(--highlight-color);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu__social-button:hover {
+  transform: scale(1.05);
+}
+
+.menu__social-button:not(:last-of-type) {
+  margin-right: 1.5rem;
+}
+
+.menu__social-icon {
+  width: 2rem;
+  filter: var(--tertiary-icon);
+  user-select: none;
+  margin: -0.1rem 0 0 -0.1rem;
+}
+
+.menu__close {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  user-select: none;
+  filter: var(--primary-icon);
+}
+
+@media (max-height: 640px) {
+  .menu__list-item {
+    font-size: 4.2rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .menu__list-item:hover {
+    opacity: 1;
+  }
+
+  .menu__social-button:hover,
+  .menu__close:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu__close {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu__list-item {
+    font-size: 4.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu__close {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .menu__list-item {
+    font-size: 3.6rem;
+  }
+}

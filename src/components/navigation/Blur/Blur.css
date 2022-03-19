@@ -1,0 +1,21 @@
+.blur {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  background-color: var(--blur);
+  z-index: 200;
+  backdrop-filter: blur(0.8rem);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.blur--unhidden {
+  visibility: visible;
+}
+
+.blur--show {
+  opacity: 1;
+}

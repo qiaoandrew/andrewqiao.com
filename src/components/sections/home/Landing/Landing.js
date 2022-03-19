@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import ThemeContext from '../../../../store/theme-context';
 import Nav from '../../../navigation/Nav/Nav';
 import Button from '../../../UI/Button/Button';
-import classes from './Landing.module.css';
+import './Landing.css';
 import wavesLight from '../../../../img/waves/waves-light.svg';
 import wavesDark from '../../../../img/waves/waves-dark.svg';
 
@@ -10,9 +10,9 @@ const Landing = () => {
   const themeContext = useContext(ThemeContext);
 
   return (
-    <div className={classes.landing}>
+    <div className="landing">
       <Nav />
-      <div className={classes['landing__content']}>
+      <div className="landing__content">
         <h1>Andrew Qiao</h1>
         <p>
           Hi! I am a grade 12 student with a passion for Computer Science and
@@ -24,7 +24,7 @@ const Landing = () => {
       </div>
       <img
         src={themeContext.theme === 'light' ? wavesLight : wavesDark}
-        className={`${classes.waves}`}
+        className="landing__waves"
         id="waves"
         alt="Waves"
       />
