@@ -11,6 +11,11 @@
   opacity: 0;
 }
 
+.menu-show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .menu__list {
   list-style: none;
   text-align: center;

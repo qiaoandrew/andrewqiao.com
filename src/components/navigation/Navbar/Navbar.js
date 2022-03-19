@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Toggle from '../Toggle/Toggle';
 import classes from './Navbar.module.css';
 
+// Top navigation bar
 const Navbar = (props) => {
   return (
     <div className={classes.navbar}>

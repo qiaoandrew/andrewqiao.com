@@ -3,23 +3,24 @@ import Navbar from '../Navbar/Navbar';
 import Menu from '../Menu/Menu';
 import Blur from '../Blur/Blur';
 
+// Function for when user toggles the menu
 const toggleMenu = () => {
   document.body.classList.toggle('no-scrolling');
 
-  document.querySelector('.menu').classList.toggle('menu--show');
+  document.querySelector('.menu').classList.toggle('menu-show');
 
   const blur = document.querySelector('.blur');
-  blur.classList.toggle('blur--show');
-  if (blur.classList.contains('blur--unhidden')) {
+  blur.classList.toggle('blur-show');
+  if (blur.classList.contains('blur-unhidden')) {
     setTimeout(() => {
-      blur.classList.toggle('blur--unhidden');
+      blur.classList.toggle('blur-unhidden');
     }, 300);
   } else {
-    blur.classList.toggle('blur--unhidden');
+    blur.classList.toggle('blur-unhidden');
   }
 };
 
-// Container for navigation components and manages menu
+// section for navigation components and manages menu
 const Nav = () => {
   return (
     <Fragment>

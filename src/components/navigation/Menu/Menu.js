@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { about } from '../../../constants/constants';
 import closeIcon from '../../../img/icons/close-icon.svg';
 import './Menu.css';
@@ -15,16 +14,24 @@ const Menu = (props) => {
       />
       <ul className="menu__list">
         <li className="menu__list-item">
-          <Link to="/">Home</Link>
+          <a href="/" onClick={props.toggleMenu}>
+            Home
+          </a>
         </li>
         <li className="menu__list-item">
-          <Link to="/#projects">Projects</Link>
+          <a href="/#projects" onClick={props.toggleMenu}>
+            Projects
+          </a>
         </li>
         <li className="menu__list-item">
-          <Link to="/#experiences">Experiences</Link>
+          <a href="/#experiences" onClick={props.toggleMenu}>
+            Experiences
+          </a>
         </li>
         <li className="menu__list-item">
-          <Link to="/#about">About</Link>
+          <a href="/#about" onClick={props.toggleMenu}>
+            About
+          </a>
         </li>
       </ul>
       <div className="menu__socials">
@@ -36,9 +43,13 @@ const Menu = (props) => {
               target="_blank"
               rel="noreferrer"
               className="menu__social-button"
-              key={`social${i}`}
+              key={`social-button-${i}`}
             >
-              <img src={social.icon} alt="" className="menu__social-icon" />
+              <img
+                src={social.icon}
+                alt={social.alt}
+                className="menu__social-icon"
+              />
             </a>
           ))}
         </div>

@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6.6rem;
+}
+
+@media (max-width: 1250px) {
+  .grid {
+    grid-gap: 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-gap: 4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .grid {
+    display: block;
+  }
+}

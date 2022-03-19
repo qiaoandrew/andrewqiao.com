@@ -38,7 +38,11 @@ export const projects = [
     buttonLink: 'http://onelink.to/gvjacz',
     hasDark: true,
     mockups: [pethsapp1Light, pethsapp1Dark, pethsapp2Light, pethsapp2Dark],
-    mockupClasses: ['pethsapp-1-mockup', 'pethsapp-2-mockup'],
+    mockupClasses: [
+      'pethsapp-1-mockup',
+      'pethsapp-2-mockup',
+      'pethsapp-3-mockup',
+    ],
   },
   {
     name: 'CREATE Website',
@@ -61,7 +65,7 @@ export const projects = [
     buttonLink: 'https://createmarkham.ca/',
     hasDark: false,
     mockups: [create1, create2],
-    mockupClasses: ['create-1-mockup', 'create-2-mockup'],
+    mockupClasses: ['create-1-mockup', 'create-2-mockup', 'create-3-mockup'],
   },
   {
     name: 'TSAC Website',
@@ -73,7 +77,7 @@ export const projects = [
     about:
       'The website was designed using Figma and developed through HTML, CSS, and Javascript.',
     motivation:
-      'It was designed for the student coucnil to relay information and resources to the student body.',
+      'It was designed for the student council to relay information and resources to the student body.',
     roles:
       'Throughout the creation process, my roles included designing and developing the website.',
     description: [
@@ -85,7 +89,7 @@ export const projects = [
     buttonLink: 'https://tsac.ca/',
     hasDark: true,
     mockups: [tsac1Light, tsac1Dark, tsac2Light, tsac2Dark],
-    mockupClasses: ['tsac-1-mockup', 'tsac-2-mockup'],
+    mockupClasses: ['tsac-1-mockup', 'tsac-2-mockup', 'tsac-3-mockup'],
   },
   {
     name: 'Paradise Tower Defense',
@@ -109,7 +113,11 @@ export const projects = [
     buttonLink: 'https://www.greenfoot.org/scenarios/28182',
     hasDark: false,
     mockups: [paradise1, paradise2],
-    mockupClasses: ['paradise-1-mockup', 'paradise-2-mockup'],
+    mockupClasses: [
+      'paradise-1-mockup',
+      'paradise-2-mockup',
+      'paradise-3-mockup',
+    ],
   },
 ];
 

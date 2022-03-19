@@ -12,10 +12,10 @@
   z-index: 1;
 }
 
-.blur--unhidden {
+.blur-unhidden {
   visibility: visible;
 }
 
-.blur--show {
+.blur-show {
   opacity: 1;
 }
