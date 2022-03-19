@@ -25,12 +25,13 @@ const Menu = (props) => {
         <div className={classes.socials}>
           <p>andrewqiao2004@gmail.com</p>
           <div className={classes['social__buttons']}>
-            {about.socials.map((social) => (
+            {about.socials.map((social, i) => (
               <a
                 href={social.link}
                 target="_blank"
                 rel="noreferrer"
                 className={classes['socials__button']}
+                key={`social${i}`}
               >
                 <img
                   src={social.icon}
