@@ -25,7 +25,7 @@ const Landing = () => {
       </div>
       <img
         src={themeContext.theme === 'light' ? wavesLight : wavesDark}
-        className="landing__waves"
+        className="landing__waves no-select-or-drag"
         id="waves"
         alt="Waves"
       />

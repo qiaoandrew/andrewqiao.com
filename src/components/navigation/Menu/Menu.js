@@ -48,7 +48,7 @@ const Menu = (props) => {
               <img
                 src={social.icon}
                 alt={social.alt}
-                className="menu__social-icon"
+                className="menu__social-icon no-select-or-drag"
               />
             </a>
           ))}

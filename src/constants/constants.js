@@ -187,7 +187,7 @@ export const about = {
       alt: 'Instagram icon',
     },
   ],
-  description: [
+  descriptions: [
     'Hey there! My name is Andrew Qiao, and I am currently a grade 12 student at Pierre Elliott Trudeau High School, in Markham, Ontario. ',
     'I have an immense passion for various Computer Science topics, including artificial intelligence, data science, as well as web development.',
     'In the future, I plan on becoming a software engineer and implementing my skills to bring equitable opportunities to all global citizens.',

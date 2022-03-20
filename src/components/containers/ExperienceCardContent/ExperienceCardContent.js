@@ -22,7 +22,7 @@ const ExperienceCardContent = (props) => {
             <img
               src={arrowIcon}
               alt="Arrow"
-              className="experience-card-content__arrow-icon"
+              className="experience-card-content__arrow-icon no-select-or-drag"
             />
             <p className="experience-card-content__description-text">{point}</p>
           </div>
