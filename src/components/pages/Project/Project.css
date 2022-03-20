@@ -81,6 +81,7 @@
 .project__card-description {
   font-size: 1.8rem;
   color: var(--secondary-color);
+  line-height: 1.5;
 }
 
 .project__card-icon {

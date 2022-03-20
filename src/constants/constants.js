@@ -24,7 +24,7 @@ export const projects = [
       'Pethsapp is the official mobile application of Pierre Elliott Trudeau High School.',
     route: '/pethsapp',
     about:
-      'Pethsapp was designed in Figma and developed using a Flutter front-end as well as a Firebase backend.',
+      'Pethsapp was designed in Figma and developed using a Flutter front end as well as a Firebase back end.',
     motivation:
       'The app was designed as an educational hub for the Pierre Elliott Trudeau High School community.',
     roles:
@@ -49,7 +49,7 @@ export const projects = [
     cardName: 'CREATE Markham',
     type: 'Website',
     overview:
-      'Revampled website built for CREATE, a non-profit in Markham, Ontario.',
+      'Revamped website built for CREATE, a non-profit in Markham, Ontario.',
     route: '/create-website',
     about:
       'The website was designed using Figma and developed through HTML, CSS, and Javascript.',
@@ -105,7 +105,7 @@ export const projects = [
     roles:
       'Thorughout the development process, my roles included developing the game and designing its assets.',
     descriptions: [
-      'The game is a take of the classic tower defense genre, complete with six different levels, as well as a wide array of towers and enemies the player comes into contact with.',
+      'The game is a take on the classic tower defense genre, complete with six different levels, as well as a wide array of towers and enemies the player comes into contact with.',
       'It also boasts various sound tracks and sound effects, as well as a global leaderboard.',
       "Various data structures and algorithms were implemented to facilitate the game's interactions. Additionally, the game also incorporates modular code, using of OOP concepts.",
     ],
@@ -140,8 +140,8 @@ export const experiences = [
     location: 'Markham, ON',
     description: [
       "Leading a team of designers and developers in enhancing Pethsapp, my high school's mobile app",
-      "Developing the app's front-end using Flutter and Dart, utilizing Firebase for its back-end",
-      "Instructing other designers developers on how to use and update Pethsapp's various technologies",
+      "Developing the app's front end using Flutter and Dart, utilizing Firebase for its back end",
+      "Instructing other developers on how to use and update Pethsapp's various technologies",
     ],
   },
   {
