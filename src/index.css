@@ -84,8 +84,7 @@ html {
   overflow-x: hidden;
 }
 
-body,
-#root {
+body {
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -117,22 +116,19 @@ a {
 }
 
 @media (max-width: 1200px) {
-  body,
-  #root {
+  body {
     margin-bottom: 16rem;
   }
 }
 
 @media (max-width: 786px) {
-  body,
-  #root {
+  body {
     margin-bottom: 10rem;
   }
 }
 
 @media (max-width: 600px) {
-  body,
-  #root {
+  body {
     margin-bottom: 6rem;
   }
 }
