@@ -41,6 +41,7 @@
   .card:nth-child(2n),
   .card:nth-child(2n):hover {
     transform: none;
+    box-shadow: var(--shadow);
   }
 }
 

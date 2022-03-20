@@ -3,6 +3,10 @@
   max-width: 140rem;
 }
 
+.bottom-margin {
+  margin-bottom: 24rem;
+}
+
 .section__title {
   font-weight: 700;
   font-size: 4.2rem;
@@ -18,17 +22,29 @@
   .section {
     margin: 0 6rem;
   }
+
+  .bottom-margin {
+    margin-bottom: 20rem;
+  }
 }
 
 @media (min-width: 1460px) {
   .section {
     margin: 0 auto;
   }
+
+  .bottom-margin {
+    margin-bottom: 20rem;
+  }
 }
 
 @media (max-width: 1200px) {
   .section {
     margin: 0 4rem;
+  }
+
+  .bottom-margin {
+    margin-bottom: 16rem;
   }
 }
 
@@ -41,12 +57,20 @@
     font-size: 4rem;
     margin-bottom: 1.6rem;
   }
+
+  .bottom-margin {
+    margin-bottom: 10rem;
+  }
 }
 
 @media (max-width: 600px) {
   .section__title {
     margin-bottom: 1.2rem;
     font-size: 3.6rem;
+  }
+
+  .bottom-margin {
+    margin-bottom: 6rem;
   }
 }
 

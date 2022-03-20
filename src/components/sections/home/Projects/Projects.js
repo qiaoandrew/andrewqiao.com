@@ -7,7 +7,7 @@ import { projects } from '../../../../constants/constants';
 // Projects section on homepage
 const Projects = () => {
   return (
-    <Section id="projects">
+    <Section id="projects" className="bottom-margin">
       <h2 className="section__title">Projects</h2>
       <Grid>
         {projects.map((project, i) => {

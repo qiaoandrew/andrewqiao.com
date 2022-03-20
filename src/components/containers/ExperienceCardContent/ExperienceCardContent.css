@@ -1,0 +1,195 @@
+.experience-card-content {
+  margin: 3rem 3rem 4rem;
+}
+
+.experience-card-content__title {
+  font-size: 2.6rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.experience-card-content__company {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-bottom: 1.6rem;
+}
+
+.experience-card-content__description {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.experience-card-content__description:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.experience-card-content__arrow-icon {
+  margin: 0.6rem 1rem 0 0;
+  filter: var(--primary-icon);
+}
+
+.experience-card-content__description-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--primary-color);
+}
+
+@media (max-width: 1300px) {
+  .experience-card-content__company {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .experience-card-content {
+    margin: 2.5rem 2.5rem 3.5rem;
+  }
+
+  .experience-card-content__title {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .experience-card-content__company {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.6rem;
+  }
+
+  .experience-card-content__description:not(:last-of-type) {
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .experience-card-content__title {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .experience-card-content__company {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.4rem;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .experience-card-content {
+    margin: 3rem 3rem 4rem;
+  }
+
+  .experience-card-content__title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card-content__company {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .experience-card-content__description:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-card-content__title {
+    font-size: 2.6rem;
+  }
+
+  .experience-card-content__company {
+    font-size: 1.5rem;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card-content {
+    margin: 2rem 2rem 3rem;
+  }
+
+  .experience-card-content__title {
+    font-size: 2rem;
+  }
+
+  .experience-card-content__company {
+    font-size: 1.4rem;
+  }
+
+  .experience-card-content__arrow-icon {
+    margin: 0.25rem 1rem 0 0;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .experience-card-content {
+    margin: 2rem 2rem 2.5rem;
+  }
+
+  .experience-card-content__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .experience-card-content__company {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card-content__arrow-icon {
+    margin: 0.3rem 1rem 0 0;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .experience-card-content {
+    margin: 1.5rem 1.5rem 1.75rem;
+  }
+
+  .experience-card-content__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .experience-card-content__company {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card-content__arrow-icon {
+    margin: 0.2rem 1rem 0 0;
+  }
+
+  .experience-card-content__description-text {
+    font-size: 1.2rem;
+  }
+}
