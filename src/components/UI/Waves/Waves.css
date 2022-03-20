@@ -1,0 +1,24 @@
+.waves {
+  width: max(1366px, 100vw);
+  position: absolute;
+  top: 55%;
+  z-index: -1;
+}
+
+@media (min-width: 1200px) {
+  .waves {
+    top: 50%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .waves {
+    top: 45%;
+  }
+}
+
+@media (min-width: 2400px) {
+  .waves {
+    top: 40%;
+  }
+}

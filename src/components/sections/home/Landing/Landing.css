@@ -33,34 +33,9 @@
   line-height: 1.5;
 }
 
-.landing__waves {
-  width: max(1366px, 100vw);
-  position: absolute;
-  top: 55%;
-  z-index: -1;
-}
-
 @media (max-height: 640px) {
   .landing__description {
     margin: 0 auto 6rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .landing__waves {
-    top: 50%;
-  }
-}
-
-@media (min-width: 1800px) {
-  .landing__waves {
-    top: 45%;
-  }
-}
-
-@media (min-width: 2400px) {
-  .landing__waves {
-    top: 40%;
   }
 }
 
