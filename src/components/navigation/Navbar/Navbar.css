@@ -28,6 +28,7 @@
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
   margin-left: 2rem;
+  border-collapse: separate;
 }
 
 .menu-btn p {
