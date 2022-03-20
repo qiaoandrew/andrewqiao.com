@@ -1,5 +1,6 @@
 .menu {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: min(100vw, 54rem);
   background-color: var(--bg-color);
   position: absolute;

@@ -5,6 +5,14 @@ import Page404 from './components/pages/404/404';
 import { projects } from './constants/constants';
 
 function App() {
+  function setViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  setViewportHeight();
+  window.onresize = setViewportHeight;
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />
