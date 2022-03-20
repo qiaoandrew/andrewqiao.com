@@ -6,7 +6,7 @@
   --highlight-color: #ced9ee;
   --chip-color: #f6f6f6;
   --text-gradient: linear-gradient(92.33deg, #141b29 0%, #6684bd 100%);
-  --open-button-gradient: linear-gradient(45deg, #b4c7eb 0%, #fffefd 100%);
+  --project-gradient: linear-gradient(45deg, #b4c7eb 0%, #fffefd 100%);
   --card-gradient: linear-gradient(45deg, #e0ebff 0%, #fffefd 100%);
   --card-bottom-gradient: linear-gradient(
     360deg,
@@ -31,7 +31,7 @@
   --highlight-color: #273857;
   --chip-color: #26324a;
   --text-gradient: linear-gradient(92.33deg, #fffefd 0%, #b2c7ee 100%);
-  --open-button-gradient: linear-gradient(45deg, #475a7c 0%, #141b29 100%);
+  --project-gradient: linear-gradient(45deg, #475a7c 0%, #141b29 100%);
   --card-gradient: linear-gradient(45deg, #475a7c 0%, #141b29 100%);
   --card-bottom-gradient: linear-gradient(
     360deg,

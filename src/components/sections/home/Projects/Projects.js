@@ -12,7 +12,12 @@ const Projects = () => {
       <Grid>
         {projects.map((project, i) => {
           return (
-            <Card key={`project-card-${i}`}>
+            <Card
+              key={`project-card-${i}`}
+              withBottomGradient={true}
+              withGradientBackground={false}
+              withTransform={true}
+            >
               <ProjectCardContent project={project} />
             </Card>
           );

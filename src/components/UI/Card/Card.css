@@ -5,6 +5,11 @@
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 100%;
+}
+
+.card--gradient-background {
+  background: var(--card-gradient);
 }
 
 .card:hover {
@@ -16,8 +21,16 @@
   transform: translateY(10rem);
 }
 
+.card--no-transform:nth-child(2n) {
+  transform: translateY(0);
+}
+
 .card:nth-child(2n):hover {
   transform: translateY(9.5rem);
+}
+
+.card--no-transform:nth-child(2n):hover {
+  transform: translateY(-0.5rem);
 }
 
 .card__gradient {

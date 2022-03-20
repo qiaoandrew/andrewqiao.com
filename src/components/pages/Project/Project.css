@@ -1,0 +1,156 @@
+.project {
+  margin-top: 10rem;
+}
+
+.project__title {
+  font-weight: 700;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  background-image: var(--text-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.project__overview {
+  font-size: 2.4rem;
+  max-width: 60rem;
+  margin-bottom: 8rem;
+  font-weight: 450;
+  color: var(--primary-color);
+}
+
+.project__mockup-1 {
+  width: 100%;
+  background: var(--project-gradient);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 70rem;
+  margin-bottom: 6rem;
+}
+
+.project__image-1 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project__mockup-1:hover .project__image-1 {
+  transform: scale(1.02);
+}
+
+.pethsapp-2-mockup {
+  height: 120%;
+  margin-top: -5%;
+}
+
+.tsac-2-mockup {
+  height: 115%;
+  margin-top: -2%;
+}
+
+.create-2-mockup {
+  height: 120%;
+  margin-top: -2%;
+}
+
+.paradise-2-mockup {
+  height: 105%;
+  margin-top: -1%;
+  margin-right: -15%;
+}
+
+.project__overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.5rem;
+  margin-bottom: 12rem;
+}
+
+.project__card-content {
+  margin: 12rem 4rem 4rem;
+}
+
+.project__card-title {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.project__card-description {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.project__card-icon {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  filter: var(--tertiary-icon);
+}
+
+.project__description {
+  display: grid;
+  grid-template-columns: 56fr 45fr;
+  gap: 8rem;
+}
+
+.project__description-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__description-paragraph {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.project__description-paragraph:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+.project__description-paragraph:last-of-type {
+  margin-bottom: 10rem;
+}
+
+.project__description__mockup {
+  background: var(--project-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 85rem;
+}
+
+.project__description__mockup-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project__description__mockup:hover .project__description__mockup-image {
+  transform: scale(1.02);
+}
+
+.pethsapp-3-mockup {
+  height: 70%;
+}
+
+.tsac-3-mockup {
+  height: 75%;
+  margin-right: -20%;
+}
+
+.create-3-mockup {
+  height: 70%;
+}
+
+.paradise-3-mockup {
+  height: 105%;
+  margin-top: -1%;
+  margin-left: -35%;
+}

@@ -12,7 +12,12 @@ const Experiences = () => {
       <Grid>
         {experiences.map((experience, i) => {
           return (
-            <Card key={`experience-card-${i}`}>
+            <Card
+              key={`experience-card-${i}`}
+              withBottomGradient={true}
+              withGradientBackground={false}
+              withTransform={true}
+            >
               <ExperienceCardContent experience={experience} />
             </Card>
           );

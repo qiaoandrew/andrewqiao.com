@@ -1,24 +1,24 @@
 .waves {
   width: max(1366px, 100vw);
   position: absolute;
-  top: 55%;
+  top: 55vh;
   z-index: -1;
 }
 
 @media (min-width: 1200px) {
   .waves {
-    top: 50%;
+    top: 50vh;
   }
 }
 
 @media (min-width: 1800px) {
   .waves {
-    top: 45%;
+    top: 45vh;
   }
 }
 
 @media (min-width: 2400px) {
   .waves {
-    top: 40%;
+    top: 40vh;
   }
 }

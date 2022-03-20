@@ -27,10 +27,10 @@
 .landing__description {
   width: min(calc(100% - 1rem), 55rem);
   font-size: 2.4rem;
-  font-weight: 450;
   margin: 0 auto 10rem;
   color: var(--primary-color);
   line-height: 1.5;
+  font-weight: 450;
 }
 
 @media (max-height: 640px) {

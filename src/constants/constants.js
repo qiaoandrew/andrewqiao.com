@@ -29,7 +29,7 @@ export const projects = [
       'The app was designed as an educational hub for the Pierre Elliott Trudeau High School community.',
     roles:
       "Throughout the app's revamping, my roles included project lead, developer, and UI/UX designer.",
-    description: [
+    descriptions: [
       'Pethsapp provides its users with vital scholastic information including daily announcements, essential links, and more.',
       'It is available on both the App Store and Google Play, and is currently used by over 1200 school community members.',
       "Earlier this year, I led the app's revamping, working alongside a team of developers and designers to modernize its user interface and functionalities.",
@@ -57,7 +57,7 @@ export const projects = [
       'It was built to help the CREATE organization in expanding its digital presence in the community.',
     roles:
       'Thorughout the creation process, my roles included designing and developing the website.',
-    description: [
+    descriptions: [
       'CREATE Markham is a youth-led non-profit organization that holds annual leadership conferences to promote student wellness within the Markham community.',
       "As this year's Technology Chairperson, I collaborated with fellow council members in organizing the conference.",
     ],
@@ -80,7 +80,7 @@ export const projects = [
       'It was designed for the student council to relay information and resources to the student body.',
     roles:
       'Throughout the creation process, my roles included designing and developing the website.',
-    description: [
+    descriptions: [
       "TSAC is a student organization that represents the school's student body and makes decisions on its behalf.",
       'Together, we plan inclusive school-wide events and activities to boost student experience.',
       "As the current Technology Chairperson, my role is to enhance the school's technologies such as our app and website.",
@@ -104,7 +104,7 @@ export const projects = [
       'The game was create and submitted as the final project for my grade 12 computer science class.',
     roles:
       'Thorughout the development process, my roles included developing the game and designing its assets.',
-    description: [
+    descriptions: [
       'The game is a take of the classic tower defense genre, complete with six different levels, as well as a wide array of towers and enemies the player comes into contact with.',
       'It also boasts various sound tracks and sound effects, as well as a global leaderboard.',
       "Various data structures and algorithms were implemented to facilitate the game's interactions. Additionally, the game also incorporates modular code, using of OOP concepts.",

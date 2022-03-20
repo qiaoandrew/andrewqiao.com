@@ -32,7 +32,7 @@
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: var(--open-button-gradient);
+  background: var(--project-gradient);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
