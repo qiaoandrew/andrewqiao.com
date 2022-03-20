@@ -5,7 +5,7 @@
 .project__title {
   font-weight: 700;
   font-size: 7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   display: inline-block;
   background-image: var(--text-gradient);
   -webkit-background-clip: text;
@@ -443,7 +443,6 @@
 
   .project__title {
     font-size: 5rem;
-    margin-bottom: 1.2rem;
   }
 
   .project__overview {
