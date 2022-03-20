@@ -10,6 +10,7 @@
   background-image: var(--text-gradient);
   -webkit-background-clip: text;
   color: transparent;
+  line-height: 1.2;
 }
 
 .project__overview {
@@ -18,6 +19,7 @@
   margin-bottom: 8rem;
   font-weight: 450;
   color: var(--primary-color);
+  line-height: 1.5;
 }
 
 .project__mockup-1 {
@@ -67,7 +69,7 @@
 }
 
 .project__card-content {
-  margin: 12rem 4rem 4rem;
+  margin: 14rem 4rem 4rem;
 }
 
 .project__card-title {
@@ -153,4 +155,306 @@
   height: 105%;
   margin-top: -1%;
   margin-left: -35%;
+}
+
+@media (max-width: 1400px) {
+  .project__card-content {
+    margin: 12rem 3.5rem 3.5rem;
+  }
+
+  .project__overview-grid {
+    gap: 4.5rem;
+  }
+
+  .project__overview-grid {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .project__overview-grid {
+    gap: 4rem;
+  }
+
+  .project__card-title {
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .project__card-description {
+    font-size: 1.6rem;
+  }
+
+  .project__overview-grid {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project__card-content {
+    margin: 11rem 3rem 3rem;
+  }
+
+  .project__overview-grid {
+    gap: 3rem;
+  }
+
+  .project__card-title {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .project__mockup-1 {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project__mockup-1 {
+    height: 50rem;
+  }
+
+  .project__title {
+    font-size: 6.4rem;
+  }
+
+  .project__card-content {
+    margin: 14rem 4rem 4rem;
+  }
+
+  .project__overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .project__card-title {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project__card-description {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .project__card-content {
+    margin: 12rem 3.5rem 3.5rem;
+  }
+
+  .project__overview-grid {
+    gap: 3rem;
+  }
+
+  .project__card-title {
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .project__card-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .project__card-content {
+    margin: 11rem 3rem 4rem;
+  }
+
+  .project__overview-grid {
+    gap: 2rem;
+  }
+
+  .project__overview {
+    margin-bottom: 7rem;
+  }
+
+  .project__mockup-1:hover .project__image-1 {
+    transform: scale(1);
+  }
+
+  .project__description__mockup:hover .project__description__mockup-image {
+    transform: scale(1);
+  }
+
+  .project__overview-grid {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .project__card-content {
+    margin: 16rem 4rem 5rem;
+  }
+
+  .project__overview-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .project__card-title {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .project__card-description {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .project__title {
+    font-size: 6rem;
+  }
+
+  .project__overview {
+    font-size: 2.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .create-2-mockup {
+    margin-top: 0%;
+    height: 110%;
+    margin-left: -10%;
+  }
+
+  .paradise-2-mockup {
+    height: 90%;
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .project__title {
+    font-size: 5.4rem;
+  }
+
+  .project__overview {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .tsac-2-mockup {
+    margin-top: 2%;
+    height: 100%;
+  }
+
+  .paradise-2-mockup {
+    height: 90%;
+    margin-top: 7%;
+  }
+
+  .project__card-content {
+    margin: 14rem 3.5rem 4rem;
+  }
+
+  .project__card-title {
+    font-size: 3.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .project__card-description {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .project__card-content {
+    margin: 10rem 3rem 3.5rem;
+  }
+
+  .project__card-title {
+    font-size: 2.8rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .project__card-description {
+    font-size: 1.6rem;
+  }
+
+  .project {
+    margin-top: 7rem;
+  }
+
+  .project__title {
+    font-size: 5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .project__overview {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .pethsapp-2-mockup {
+    height: 110%;
+  }
+
+  .tsac-2-mockup {
+    margin-top: 20%;
+    height: 80%;
+  }
+
+  .create-2-mockup {
+    margin-top: 12%;
+    height: 90%;
+  }
+
+  .paradise-2-mockup {
+    height: 70%;
+    margin-top: 25%;
+  }
+
+  .project__card-icon {
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .project__card-content {
+    margin: 8rem 2.5rem 3rem;
+  }
+
+  .project__card-title {
+    font-size: 2.4rem;
+  }
+
+  .project__card-description {
+    font-size: 1.4rem;
+  }
+
+  .project__card-icon {
+    width: 4rem;
+  }
+
+  .project__overview-grid {
+    gap: 2rem;
+  }
+
+  .project {
+    margin-top: 5rem;
+  }
+
+  .project__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .project__overview {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .pethsapp-2-mockup {
+    margin-top: 10%;
+    height: 90%;
+  }
+
+  .paradise-2-mockup {
+    height: 70%;
+    margin-top: 40%;
+  }
 }

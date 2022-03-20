@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: 1460px) {
+@media (min-width: 1600px) {
   .section {
     margin: 0 auto;
   }
@@ -39,10 +39,6 @@
 }
 
 @media (max-width: 1200px) {
-  .section {
-    margin: 0 4rem;
-  }
-
   .bottom-margin {
     margin-bottom: 16rem;
   }
@@ -50,7 +46,7 @@
 
 @media (max-width: 786px) {
   .section {
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
 
   .section__title {
@@ -64,6 +60,10 @@
 }
 
 @media (max-width: 600px) {
+  .section {
+    margin: 0 2rem;
+  }
+
   .section__title {
     margin-bottom: 1.2rem;
     font-size: 3.6rem;

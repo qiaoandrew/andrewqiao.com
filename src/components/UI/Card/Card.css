@@ -21,6 +21,10 @@
   transform: translateY(10rem);
 }
 
+.card--no-transform {
+  margin-bottom: 0 !important;
+}
+
 .card--no-transform:nth-child(2n) {
   transform: translateY(0);
 }
