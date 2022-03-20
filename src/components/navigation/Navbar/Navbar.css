@@ -6,7 +6,7 @@
   z-index: 0;
 }
 
-.logo {
+.navbar__logo {
   font-size: 2.4rem;
   font-weight: 700;
   display: inline-block;
@@ -16,14 +16,14 @@
   user-select: none;
 }
 
-.navbar-right {
+.navbar__right {
   display: flex;
   align-items: center;
 }
 
 .menu-btn {
   padding: 1.4rem 3.6rem;
-  border-radius: 10rem;
+  border-radius: 50rem !important;
   outline: 1px solid var(--primary-color);
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;

@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 import Toggle from '../Toggle/Toggle';
-import classes from './Navbar.module.css';
+import './Navbar.css';
 
 // Top navigation bar
 const Navbar = (props) => {
   return (
-    <div className={classes.navbar}>
+    <div className="navbar">
       <Link to="/">
-        <h4 className={classes.logo}>AQ</h4>
+        <h4 className="navbar__logo">AQ</h4>
       </Link>
-      <div className={classes['navbar-right']}>
+      <div className="navbar__right">
         <Toggle />
-        <div className={classes['menu-btn']} onClick={props.toggleMenu}>
+        <div className="menu-btn" onClick={props.toggleMenu}>
           <p>Menu</p>
         </div>
       </div>
