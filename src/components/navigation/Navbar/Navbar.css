@@ -23,12 +23,11 @@
 
 .menu-btn {
   padding: 1.4rem 3.6rem;
-  border-radius: 50rem !important;
-  outline: 1px solid var(--primary-color);
+  border-radius: 50rem;
+  border: 1px solid var(--primary-color);
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
   margin-left: 2rem;
-  border-collapse: separate;
 }
 
 .menu-btn p {
