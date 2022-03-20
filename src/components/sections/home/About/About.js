@@ -36,7 +36,11 @@ const About = () => {
             return <p className="about__description">{description}</p>;
           })}
         </div>
-        <Button isLink={false} link="mailto:andrewqiao2004@gmail.com">
+        <Button
+          isLink={false}
+          link="mailto:andrewqiao2004@gmail.com"
+          newPage={true}
+        >
           Email Me! 👋
         </Button>
       </div>

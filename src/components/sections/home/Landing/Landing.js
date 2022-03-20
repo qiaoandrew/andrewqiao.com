@@ -14,7 +14,7 @@ const Landing = () => {
           Hi! I am a grade 12 student with a passion for Computer Science and
           UI/UX Design.
         </p>
-        <Button isLink={false} link={'/#projects'}>
+        <Button isLink={false} link={'/#projects'} newPage={false}>
           Learn More!
         </Button>
       </div>

@@ -20,7 +20,7 @@ const Page404 = () => {
       <div className="page404">
         <h1 className="page404__title">404</h1>
         <p className="page404__description">Looks like you got lost! :(</p>
-        <Button isLink={true} link="/">
+        <Button isLink={true} link="/" newPage={false}>
           Go Home
         </Button>
       </div>

@@ -101,7 +101,11 @@ const Project = (props) => {
                 <p className="project__description-paragraph">{description}</p>
               );
             })}
-            <Button isLink={false} link={props.project.buttonLink}>
+            <Button
+              isLink={false}
+              link={props.project.buttonLink}
+              newPage={true}
+            >
               {props.project.buttonText}
             </Button>
           </div>
