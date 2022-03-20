@@ -3,6 +3,8 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+  -webkit-transition: transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
   cursor: pointer;
   border: 1px solid #b2c7ee;
