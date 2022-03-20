@@ -203,11 +203,32 @@
     font-size: 2.6rem;
     margin-bottom: 0.5rem;
   }
+
+  .project__description {
+    gap: 6rem;
+  }
+
+  .project__description__mockup {
+    height: 75rem;
+  }
 }
 
 @media (max-width: 1150px) {
   .project__mockup-1 {
     height: 60rem;
+  }
+}
+@media (max-width: 1100px) {
+  .project__description {
+    gap: 5rem;
+  }
+
+  .project__description__mockup {
+    height: 65rem;
+  }
+
+  .project__description-paragraph {
+    font-size: 1.6rem;
   }
 }
 
@@ -236,6 +257,18 @@
 
   .project__card-description {
     font-size: 1.8rem;
+  }
+
+  .project__description {
+    gap: 3rem;
+  }
+
+  .project__description__mockup {
+    height: 55rem;
+  }
+
+  .project__description-paragraph:last-of-type {
+    margin-bottom: 7rem;
   }
 }
 
@@ -302,6 +335,28 @@
   .project__card-description {
     font-size: 2rem;
   }
+
+  .project__description {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  .project__description-title {
+    margin-bottom: 3rem;
+  }
+
+  .project__description-paragraph {
+    font-size: 1.8rem;
+    max-width: none;
+  }
+
+  .project__description__mockup {
+    height: 75rem;
+  }
+
+  .project__description-paragraph:last-of-type {
+    margin-bottom: 8rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -358,6 +413,14 @@
   .project__card-description {
     font-size: 1.8rem;
   }
+
+  .project__description-title {
+    margin-bottom: 2rem;
+  }
+
+  .project__description__mockup {
+    height: 65rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -411,6 +474,18 @@
     top: 2.5rem;
     right: 2.5rem;
   }
+
+  .project__description-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .project__description-paragraph:last-of-type {
+    margin-bottom: 6rem;
+  }
+
+  .project__description__mockup {
+    height: 55rem;
+  }
 }
 
 @media (max-width: 300px) {
@@ -456,5 +531,14 @@
   .paradise-2-mockup {
     height: 70%;
     margin-top: 40%;
+  }
+
+  .project__description__mockup {
+    height: 45rem;
+  }
+
+  .project__description-title {
+    width: 100%;
+    text-align: left;
   }
 }
