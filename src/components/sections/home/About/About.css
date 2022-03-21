@@ -24,7 +24,7 @@
 }
 
 .about__social-icon:hover {
-  transform: translateY(0);
+  transform: translateY(-0.3rem);
 }
 
 .about__descriptions {
@@ -40,6 +40,12 @@
 
 .about__description:not(:last-of-type) {
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 786px) {
+  .about__social-icon:hover {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 600px) {
