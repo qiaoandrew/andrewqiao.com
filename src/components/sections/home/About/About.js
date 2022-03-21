@@ -14,13 +14,14 @@ const About = () => {
           className="about__portrait no-select-or-drag"
         />
         <div className="about__socials">
-          {about.socials.map((social) => {
+          {about.socials.map((social, i) => {
             return (
               <a
                 href={social.link}
                 target="_blank"
                 rel="noreferrer"
                 className="about__social-link"
+                key={`social-link-${i}`}
               >
                 <img
                   src={social.icon}
@@ -32,8 +33,12 @@ const About = () => {
           })}
         </div>
         <div className="about__descriptions">
-          {about.descriptions.map((description) => {
-            return <p className="about__description">{description}</p>;
+          {about.descriptions.map((description, i) => {
+            return (
+              <p className="about__description" key={`about-description-${i}`}>
+                {description}
+              </p>
+            );
           })}
         </div>
         <Button
