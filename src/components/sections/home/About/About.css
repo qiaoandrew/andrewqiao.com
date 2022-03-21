@@ -24,7 +24,7 @@
 }
 
 .about__social-icon:hover {
-  transform: translateY(-0.3rem);
+  transform: translateY(0);
 }
 
 .about__descriptions {
@@ -62,10 +62,10 @@
   }
 
   .about__portrait {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .about__socials {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 }
