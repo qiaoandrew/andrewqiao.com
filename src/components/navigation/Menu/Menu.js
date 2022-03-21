@@ -35,7 +35,14 @@ const Menu = (props) => {
         </li>
       </ul>
       <div className="menu__socials">
-        <p className="menu__email">andrewqiao2004@gmail.com</p>
+        <a
+          href="mailto:andrewqiao2004@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          className="menu__email"
+        >
+          andrewqiao2004@gmail.com
+        </a>
         <div className="menu__social-buttons">
           {about.socials.map((social, i) => (
             <a

@@ -4,11 +4,13 @@
   background: var(--text-gradient);
   padding: 2.4rem 4rem;
   border-radius: 10rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: var(--shadow);
 }
 
 .button:hover {
   transform: translateY(-0.5rem);
+  box-shadow: var(--shadow-dark);
 }
 
 .button:active {
