@@ -33,6 +33,21 @@
   font-weight: 450;
 }
 
+@media (max-height: 500px) {
+  .landing {
+    height: 55rem;
+  }
+
+  .landing__title {
+    margin-top: 6rem;
+    font-size: 6rem;
+  }
+
+  .landing__description {
+    font-size: 2rem;
+  }
+}
+
 @media (max-height: 640px) {
   .landing__description {
     margin: 0 auto 6rem;
