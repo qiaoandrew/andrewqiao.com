@@ -114,6 +114,28 @@
   }
 }
 
+@media (max-height: 600px) {
+  .menu__list-item {
+    font-size: 4rem;
+  }
+}
+
+@media (max-height: 520px) {
+  .menu__socials {
+    display: none;
+  }
+
+  .menu__list {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-height: 400px) {
+  .menu__list-item {
+    font-size: 3.6rem;
+  }
+}
+
 @media (max-width: 786px) {
   .menu__list-item:hover {
     opacity: 1;
