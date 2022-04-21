@@ -62,14 +62,12 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .card,
   .card__gradient {
     border-radius: 2rem;
   }
-}
 
-@media (max-width: 320px) {
   .card:not(:last-of-type) {
     margin-bottom: 2rem;
   }

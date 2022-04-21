@@ -195,6 +195,7 @@
 
   .project-card-content__type {
     font-size: 1.4rem;
+    margin-bottom: 0.2rem;
   }
 
   .project-card-content__name {

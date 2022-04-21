@@ -22,23 +22,39 @@
 }
 
 .menu-btn {
-  padding: 1.4rem 3.6rem;
-  border-radius: 50rem;
-  border: 1px solid var(--primary-color);
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
+  width: 5.5rem;
+  height: 5.5rem;
+  background: var(--card-gradient);
+  border-radius: 50%;
   margin-left: 2rem;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
 }
 
-.menu-btn p {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  user-select: none;
+.menu-btn div {
+  width: 3rem;
+  height: 0.6rem;
+  background: var(--text-gradient);
+  border-radius: 10rem;
+  transition: width 0.3s ease-in-out;
 }
 
-.menu-btn:hover {
-  background-color: var(--highlight-color);
+.menu-btn div:not(:last-of-type) {
+  margin-bottom: 0.3rem;
+}
+
+.menu-btn div:nth-of-type(1) {
+  width: 2rem;
+}
+
+.menu-btn div:nth-of-type(3) {
+  justify-self: flex-end;
+  width: 2rem;
+}
+
+.menu-btn:hover div {
+  width: 3rem;
 }
 
 @media (max-width: 1200px) {
@@ -50,16 +66,6 @@
 @media (max-width: 992px) {
   .navbar {
     padding: 4rem 4.5rem 1rem;
-  }
-}
-
-@media (max-width: 786px) {
-  .navbar {
-    padding: 4rem 3.5rem 1rem;
-  }
-
-  .menu-btn:hover {
-    background-color: var(--background-color);
   }
 }
 
@@ -78,25 +84,11 @@
     padding: 1.2rem 2.5rem;
     margin-left: 1.5rem;
   }
-
-  .menu-btn {
-    padding: 1.2rem 3.2rem;
-    margin-left: 1.8rem;
-  }
 }
 
 @media (max-width: 360px) {
   .navbar {
     padding: 2rem 2rem 1rem;
-  }
-
-  .menu-btn {
-    padding: 1.2rem 3rem;
-    margin-left: 1.6rem;
-  }
-
-  .menu-btn p {
-    font-size: 1.4rem;
   }
 }
 

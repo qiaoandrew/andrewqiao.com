@@ -12,7 +12,9 @@ const Navbar = (props) => {
       <div className="navbar__right">
         <Toggle />
         <div className="menu-btn" onClick={props.toggleMenu}>
-          <p>Menu</p>
+          <div />
+          <div />
+          <div />
         </div>
       </div>
     </div>
