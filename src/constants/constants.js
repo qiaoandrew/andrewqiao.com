@@ -75,7 +75,7 @@ export const projects = [
       "Revamped website for Pierre Elliott Trudeau High School's Student Council.",
     route: '/tsac-website',
     about:
-      'The website was designed using Figma and developed through HTML, CSS, and Javascript.',
+      'The website was designed using Figma and developed using Next.js, React.js, and Firebase.',
     motivation:
       'It was designed for the student council to relay information and resources to the student body.',
     roles:
