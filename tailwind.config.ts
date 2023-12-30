@@ -24,6 +24,10 @@ const config: Config = {
       border: "hsl(var(--border))",
       ring: "hsl(var(--ring))",
     },
+    fontFamily: {
+      sans: ["var(--font-inter)", "sans-serif"],
+      display: ["var(--font-inter-display)", "sans-serif"],
+    },
     fontSize: {
       3: ["12px", "20px"],
       3.5: ["14px", "24px"],
