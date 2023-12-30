@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 97%;
+    --foreground: 234 25% 4%;
+    --primary: 0 0% 6%;
+    --primary-foreground: 0 0% 77%;
+    --secondary-foreground: 215 4% 62%;
+    --muted-foreground: 215 4% 43%;
+    --border: 241 1 12%;
+    --ring: 240 5% 27%;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .dark {
+    --background: 234 25% 4%;
+    --foreground: 0 0% 97%;
+    --primary: 0 0% 6%;
+    --primary-foreground: 0 0% 77%;
+    --secondary-foreground: 215 4% 62%;
+    --muted-foreground: 215 4% 43%;
+    --border: 241 1 12%;
+    --ring: 240 5% 27%;
+  }
+
+  * {
+    @apply box-border;
+  }
 }
