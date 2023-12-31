@@ -10,7 +10,7 @@
     --primary-foreground: 0 0% 77%;
     --secondary-foreground: 215 4% 62%;
     --muted-foreground: 215 4% 43%;
-    --border: 241 1 12%;
+    --border: 241 1% 12%;
     --ring: 240 5% 27%;
   }
 
@@ -21,11 +21,18 @@
     --primary-foreground: 0 0% 77%;
     --secondary-foreground: 215 4% 62%;
     --muted-foreground: 215 4% 43%;
-    --border: 241 1 12%;
+    --accent: 241 1% 12%;
+    --border: 241 1% 12%;
     --ring: 240 5% 27%;
   }
 
   * {
     @apply box-border;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-5 max-w-[1080px];
   }
 }

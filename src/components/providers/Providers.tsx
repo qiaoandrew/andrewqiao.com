@@ -12,6 +12,7 @@ export default function Providers({ children }: ProvidersProps) {
       attribute="class"
       defaultTheme="dark"
       themes={["light", "dark"]}
+      disableTransitionOnChange
     >
       {children}
     </ThemeProvider>

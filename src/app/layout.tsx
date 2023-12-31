@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { inter, interDisplay } from "@/lib/fonts";
 import Providers from "@/components/providers/Providers";
+import Header from "@/components/navigation/Header";
 
 export const metadata: Metadata = {
   title: "Andrew Qiao",
@@ -21,7 +22,10 @@ export default function RootLayout({
       <body
         className={cn("bg-background", inter.variable, interDisplay.variable)}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
