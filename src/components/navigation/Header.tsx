@@ -7,7 +7,7 @@ import MenuToggle from "@/components/navigation/MenuToggle";
 
 export default function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 border-b border-b-border">
+    <header className="fixed inset-x-0 top-0 border-b border-b-border bg-background/40 backdrop-blur-md">
       <div className="container h-14 md:h-18 flex items-center justify-between">
         <Link href="/" className="font-display text-4.5 font-bold">
           <GradientText>Andrew Qiao</GradientText>

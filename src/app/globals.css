@@ -33,6 +33,6 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto px-5 max-w-[1080px];
+    @apply mx-auto px-5 max-w-[1080px] sm:px-9 2xl:px-0;
   }
 }

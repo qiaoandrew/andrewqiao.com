@@ -20,7 +20,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={cn("bg-background", inter.variable, interDisplay.variable)}
+        className={cn(
+          "bg-background pt-21 sm:pt-24 md:pt-32 2xl:pt-36",
+          inter.variable,
+          interDisplay.variable,
+        )}
       >
         <Providers>
           <Header />
