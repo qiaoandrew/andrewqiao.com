@@ -21,7 +21,7 @@ export default function Navbar() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
-          <NavigationMenuContent className="font-sans">
+          <NavigationMenuContent>
             <NavigationMenuItemsCardList>
               <NavigationMenuListItemCard
                 title="RE/MAX"
