@@ -1,8 +1,9 @@
-import Hero from "@/components/sections/Hero";
-import Projects from "@/components/sections/Projects";
-import Experiences from "@/components/sections/Experiences";
-import About from "@/components/sections/About";
-import Contact from "@/components/sections/Contact";
+import Hero from '@/components/sections/Hero';
+import Projects from '@/components/sections/Projects';
+import Experiences from '@/components/sections/Experiences';
+import About from '@/components/sections/About';
+import Contact from '@/components/sections/Contact';
+import Footer from '@/components/navigation/Footer';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Experiences />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 }
