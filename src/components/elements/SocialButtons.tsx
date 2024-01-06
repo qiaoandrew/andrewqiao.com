@@ -5,7 +5,8 @@ import {
   TwitterIcon,
 } from 'lucide-react';
 
-import { Button } from '@/components/ui/Button';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/Button';
 import GradientBorder from '@/components/ui/GradientBorder';
 
 const SOCIAL_BUTTONS = [
@@ -40,9 +41,15 @@ export default function SocialButtons() {
     <div className="mt-5 flex flex-wrap gap-3">
       {SOCIAL_BUTTONS.map(({ id, title, href, icon }) => (
         <GradientBorder borderRadius="rounded-2" key={id}>
-          <Button size="icon-md" className="rounded-[7px]">
+          <a
+            href={href}
+            target="_blank"
+            rel="noreferrer noopenner"
+            className={cn(buttonVariants({ size: 'icon-md' }), 'rounded-[7px]')}
+          >
             {icon}
-          </Button>
+            <span className="sr-only">{title}</span>
+          </a>
         </GradientBorder>
       ))}
     </div>
