@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 
 import GradientText from '@/components/typography/GradientText';
+import Experience from '@/components/elements/Experience';
 
 const EXPERIENCES = [
   {
@@ -45,6 +46,13 @@ export default function Experiences() {
       </h2>
       {EXPERIENCES.map(({ id, company, role, date, location, points }, i) => (
         <Fragment key={id}>
+          <Experience
+            company={company}
+            role={role}
+            date={date}
+            location={location}
+            points={points}
+          />
           {i !== EXPERIENCES.length - 1 && (
             <hr className="mb-6 mt-9 text-border" />
           )}
