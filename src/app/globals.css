@@ -5,13 +5,14 @@
 @layer base {
   :root {
     --background: 0 0% 97%;
-    --foreground: 234 25% 4%;
-    --primary: 0 0% 6%;
-    --primary-foreground: 0 0% 77%;
-    --secondary-foreground: 215 4% 62%;
-    --muted-foreground: 215 4% 43%;
-    --border: 241 1% 12%;
-    --ring: 240 5% 27%;
+    --foreground: 228 26% 4%;
+    --primary: 0 0% 94%;
+    --primary-foreground: 240 5% 13%;
+    --secondary-foreground: 0 0% 17%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 0 0% 91%;
+    --border: 0 0% 91%;
+    --ring: 0 0% 75%;
   }
 
   .dark {
@@ -21,8 +22,8 @@
     --primary-foreground: 0 0% 77%;
     --secondary-foreground: 215 4% 62%;
     --muted-foreground: 215 4% 43%;
-    --accent: 241 1% 12%;
-    --border: 241 1% 12%;
+    --accent: 240 1% 12%;
+    --border: 240 1% 12%;
     --ring: 240 5% 27%;
   }
 
@@ -33,6 +34,6 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto px-5 max-w-[1080px] sm:px-9 2xl:px-0;
+    @apply mx-auto max-w-[1080px] px-5 sm:px-9 2xl:px-0;
   }
 }

@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 export default function MenuToggle() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,15 +14,15 @@ export default function MenuToggle() {
     >
       <div
         className={cn(
-          "h-[5px] w-[22px] rounded-full transition-transform duration-200 ease-out dark:bg-dark-text-gradient",
-          isOpen ? "translate-x-[10px]" : "",
+          'bg-light-text-gradient h-[5px] w-[22px] rounded-full transition-transform duration-200 ease-out dark:bg-dark-text-gradient',
+          isOpen ? 'translate-x-[10px]' : ''
         )}
       />
-      <div className="h-[5px] w-8 rounded-full dark:bg-dark-text-gradient" />
+      <div className="bg-light-text-gradient h-[5px] w-8 rounded-full dark:bg-dark-text-gradient" />
       <div
         className={cn(
-          "h-[5px] w-[22px] self-end rounded-full transition-transform duration-200 ease-out dark:bg-dark-text-gradient",
-          isOpen ? "-translate-x-[10px]" : "",
+          'bg-light-text-gradient h-[5px] w-[22px] self-end rounded-full transition-transform duration-200 ease-out dark:bg-dark-text-gradient',
+          isOpen ? '-translate-x-[10px]' : ''
         )}
       />
     </button>

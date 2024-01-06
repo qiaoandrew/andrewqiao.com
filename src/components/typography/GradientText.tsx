@@ -4,7 +4,7 @@ type GradientTextProps = {
 
 export default function GradientText({ children }: GradientTextProps) {
   return (
-    <span className="inline-block dark:bg-dark-text-gradient bg-clip-text text-transparent">
+    <span className="bg-light-text-gradient inline-block bg-clip-text text-transparent dark:bg-dark-text-gradient">
       {children}
     </span>
   );

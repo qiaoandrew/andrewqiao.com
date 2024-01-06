@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-dark-button-gradient',
+        default: 'bg-light-button-gradient dark:bg-dark-button-gradient',
         ghost: 'bg-transparent hover:bg-accent',
       },
       size: {
