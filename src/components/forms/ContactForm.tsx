@@ -1,16 +1,14 @@
 'use client';
 
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Link from 'next/link';
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import { Button } from '@/components/ui/Button';
 import { Form, FormField, FormItem } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
-import GradientBorder from '@/components/ui/GradientBorder';
 import { Textarea } from '@/components/ui/Textarea';
+import GradientBorder from '@/components/ui/GradientBorder';
 
 const formSchema = z.object({
   name: z.string().min(1, 'Please enter your name.'),
@@ -37,7 +35,7 @@ export default function ContactForm() {
           control={form.control}
           name="name"
           render={({ field }) => (
-            <FormItem className="mb-5">
+            <FormItem className="mb-5 xs:mb-6">
               <GradientBorder borderRadius="rounded-[11px]">
                 <Input type="text" placeholder="Name" {...field} />
               </GradientBorder>
@@ -48,7 +46,7 @@ export default function ContactForm() {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="mb-5">
+            <FormItem className="mb-5 xs:mb-6">
               <GradientBorder borderRadius="rounded-[11px]">
                 <Input type="email" placeholder="Email" {...field} />
               </GradientBorder>
@@ -57,21 +55,25 @@ export default function ContactForm() {
         />
         <FormField
           control={form.control}
-          name="email"
+          name="message"
           render={({ field }) => (
-            <FormItem className="mb-12">
+            <FormItem className="mb-12 xs:mb-16">
               <GradientBorder borderRadius="rounded-[11px]">
                 <Textarea
                   placeholder="Message"
                   {...field}
-                  className="h-[160px]"
+                  className="h-[160px] xs:h-[200px]"
                 />
               </GradientBorder>
             </FormItem>
           )}
         />
-        <GradientBorder borderRadius="rounded-[11px]">
-          <Button type="submit" size="sm" className="w-full">
+        <GradientBorder borderRadius="rounded-[11px] xs:inline-flex xs:rounded-[13px]">
+          <Button
+            type="submit"
+            size="sm"
+            className="w-full xs:w-[110px] xs:rounded-3 xs:py-3 xs:text-4.5"
+          >
             Submit
           </Button>
         </GradientBorder>
