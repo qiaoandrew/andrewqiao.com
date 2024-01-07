@@ -1,4 +1,5 @@
 import GradientText from '@/components/typography/GradientText';
+import ContactForm from '@/components/forms/ContactForm';
 
 export default function Contact() {
   return (
@@ -11,6 +12,7 @@ export default function Contact() {
           Have a question, new opportunity, or just want to have a quick chat?
           Feel free to send me a message.
         </p>
+        <ContactForm />
       </div>
     </section>
   );
