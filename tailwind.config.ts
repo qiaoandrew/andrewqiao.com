@@ -69,7 +69,7 @@ const config: Config = {
       11: ['44px', '56px'],
       12: ['48px', '60px'],
     },
-    leading: {
+    lineHeight: {
       1: '4px',
       2: '8px',
       3: '12px',
@@ -152,6 +152,7 @@ const config: Config = {
         },
       },
       spacing: {
+        5.5: '22px',
         18: '72px',
         21: '84px',
         25: '100px',

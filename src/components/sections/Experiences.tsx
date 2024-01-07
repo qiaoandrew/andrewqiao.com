@@ -66,23 +66,25 @@ export default function Experiences() {
       <h2 className="mb-5 font-display text-7 font-bold md:mb-6 md:text-10">
         <GradientText>Experiences</GradientText>
       </h2>
-      {EXPERIENCES.map(
-        ({ id, company, role, date, location, points, icon }, i) => (
-          <Fragment key={id}>
-            <Experience
-              company={company}
-              role={role}
-              date={date}
-              location={location}
-              points={points}
-              icon={icon}
-            />
-            {i !== EXPERIENCES.length - 1 && (
-              <hr className="mb-6 mt-9 text-border" />
-            )}
-          </Fragment>
-        )
-      )}
+      <div className="grid md:gap-21">
+        {EXPERIENCES.map(
+          ({ id, company, role, date, location, points, icon }, i) => (
+            <Fragment key={id}>
+              <Experience
+                company={company}
+                role={role}
+                date={date}
+                location={location}
+                points={points}
+                icon={icon}
+              />
+              {i !== EXPERIENCES.length - 1 && (
+                <hr className="mb-6 mt-9 text-border md:hidden" />
+              )}
+            </Fragment>
+          )
+        )}
+      </div>
     </section>
   );
 }
