@@ -21,7 +21,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          'bg-background pt-21 font-sans sm:pt-24 md:pt-32 2xl:pt-36',
+          'bg-background font-sans',
           inter.variable,
           interDisplay.variable
         )}
