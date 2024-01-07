@@ -3,7 +3,7 @@ import { extendTailwindMerge } from 'tailwind-merge';
 
 const fontSizeClasses = [
   {
-    text: ['3', '3.5', '4', '4.5', '5', '6', '8', '9', '10', '12'],
+    text: ['3', '3.5', '4', '4.5', '5', '5.5', '6', '8', '9', '10', '12'],
   },
 ];
 
