@@ -1,13 +1,13 @@
 import { Fragment } from 'react';
+import { MicroscopeIcon } from 'lucide-react';
 
 import ibmLogo from '../../../public/img/logos/ibm-logo.png';
 import uhnLogo from '../../../public/img/logos/uhn-logo.png';
 import tdLogo from '../../../public/img/logos/td-logo.png';
 import uoftLogo from '../../../public/img/logos/uoft-logo.png';
 import GradientText from '@/components/typography/GradientText';
-import Experience from '@/components/elements/Experience';
+import ExperienceItem from '@/components/elements/ExperienceItem';
 import ExperienceButton from '../buttons/ExperienceButton';
-import { MicroscopeIcon } from 'lucide-react';
 
 const EXPERIENCES = [
   {
@@ -75,7 +75,7 @@ const EXPERIENCES = [
 
 export default function Experiences() {
   return (
-    <section className="mb-30 md:mb-50 container">
+    <section className="container mb-30 md:mb-50">
       <h2 className="mb-5 font-display text-7 font-bold md:mb-6 md:text-10">
         <GradientText>Experiences</GradientText>
       </h2>
@@ -83,7 +83,7 @@ export default function Experiences() {
         {EXPERIENCES.map(
           ({ id, company, role, date, location, points, icon, buttons }, i) => (
             <Fragment key={id}>
-              <Experience
+              <ExperienceItem
                 company={company}
                 role={role}
                 date={date}

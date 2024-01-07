@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/Badge';
 import GradientBorder from '@/components/ui/GradientBorder';
 import GradientText from '@/components/typography/GradientText';
 
-type ExperienceProps = {
+type ExperienceItemProps = {
   company: string;
   role: string;
   date: string;
@@ -14,7 +14,7 @@ type ExperienceProps = {
   buttons: React.ReactNode[];
 };
 
-export default function Experience({
+export default function ExperienceItem({
   company,
   role,
   date,
@@ -22,7 +22,7 @@ export default function Experience({
   points,
   icon,
   buttons,
-}: ExperienceProps) {
+}: ExperienceItemProps) {
   return (
     <div className="md:flex md:justify-between md:gap-7">
       <div className="hidden md:block">
