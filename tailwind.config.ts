@@ -121,7 +121,7 @@ const config: Config = {
         'light-contact-gradient':
           'linear-gradient(180deg, #F2F2F2 0%, #F7F7F7 100%)',
         'light-card-bottom-gradient':
-          'linear-gradient(180deg, rgba(230, 230, 230, 0.00) 0%, #E6E6E6 100%)',
+          'linear-gradient(180deg, rgba(230, 230, 230, 0.00) 0%, rgba(230, 230, 230, 0.00) 50%, #E6E6E6 100%)',
         'dark-text-gradient':
           'linear-gradient(90deg, #808A98 0%, #F7F7F7 50%, #808A98 100%)',
         'dark-border-gradient':
@@ -131,7 +131,7 @@ const config: Config = {
         'dark-contact-gradient':
           'linear-gradient(180deg, #0F0F0F 0%, #07080C 100%)',
         'dark-card-bottom-gradient':
-          'linear-gradient(180deg, rgba(30, 30, 31, 0.00) 0%, #1E1E1F 100%)',
+          'linear-gradient(180deg, rgba(30, 30, 31, 0.00) 0%, rgba(30, 30, 31, 0.00) 50%, #1E1E1F 100%)',
       },
       keyframes: {
         'scale-in': {
@@ -157,7 +157,9 @@ const config: Config = {
         21: '84px',
         25: '100px',
         30: '120px',
+        34: '136px',
         36: '144px',
+        49: '196px',
         50: '200px',
       },
     },

@@ -30,7 +30,7 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <section className="container mb-25 grid gap-6 md:mb-40">
+    <section className="mb-34 md:mb-49 container grid gap-6 md:grid-cols-2 lg:gap-12">
       {PROJECTS.map(({ id, title, type, mockup }) => (
         <ProjectCard
           id={id}
