@@ -1,9 +1,9 @@
-import * as React from "react";
-import { ChevronDownIcon } from "lucide-react";
-import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
-import { cva } from "class-variance-authority";
+import * as React from 'react';
+import { ChevronDownIcon } from 'lucide-react';
+import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
+import { cva } from 'class-variance-authority';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 const NavigationMenu = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Root>,
@@ -12,8 +12,8 @@ const NavigationMenu = React.forwardRef<
   <NavigationMenuPrimitive.Root
     ref={ref}
     className={cn(
-      "relative z-10 flex max-w-max flex-1 items-center justify-center",
-      className,
+      'relative z-10 flex max-w-max flex-1 items-center justify-center',
+      className
     )}
     {...props}
   >
@@ -30,8 +30,8 @@ const NavigationMenuList = React.forwardRef<
   <NavigationMenuPrimitive.List
     ref={ref}
     className={cn(
-      "group flex flex-1 list-none items-center justify-center space-x-3",
-      className,
+      'group flex flex-1 list-none items-center justify-center space-x-3',
+      className
     )}
     {...props}
   />
@@ -41,7 +41,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex w-max items-center justify-center rounded-2.5 px-3 py-1.5 text-4 transition-colors duration-200 text-primary-foreground hover:bg-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-accent",
+  'group inline-flex w-max items-center justify-center rounded-2.5 px-3 py-1.5 text-4 transition-colors duration-200 font-medium text-primary-foreground hover:bg-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=open]:bg-accent'
 );
 
 const NavigationMenuTrigger = React.forwardRef<
@@ -50,10 +50,10 @@ const NavigationMenuTrigger = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <NavigationMenuPrimitive.Trigger
     ref={ref}
-    className={cn(navigationMenuTriggerStyle(), "group", className)}
+    className={cn(navigationMenuTriggerStyle(), 'group', className)}
     {...props}
   >
-    {children}{" "}
+    {children}{' '}
     <ChevronDownIcon
       className="relative ml-1.5 h-3.5 w-3.5 transition duration-200 group-data-[state=open]:rotate-180"
       aria-hidden="true"
@@ -69,8 +69,8 @@ const NavigationMenuContent = React.forwardRef<
   <NavigationMenuPrimitive.Content
     ref={ref}
     className={cn(
-      "left-0 top-0 w-full bg-background data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto",
-      className,
+      'left-0 top-0 w-full bg-background data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 md:absolute md:w-auto',
+      className
     )}
     {...props}
   />
@@ -83,11 +83,11 @@ const NavigationMenuViewport = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
   React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
 >(({ className, ...props }, ref) => (
-  <div className={cn("absolute left-0 top-full flex justify-center")}>
+  <div className={cn('absolute left-0 top-full flex justify-center')}>
     <NavigationMenuPrimitive.Viewport
       className={cn(
-        "data-[state=open]:animate-scale-in data-[state=closed]:animate-scale-out relative mt-3 h-[var(--radix-navigation-menu-viewport-height)] origin-[top_center] overflow-hidden rounded-3 border border-border bg-popover text-popover-foreground transition-[width,_height] duration-200 md:w-[var(--radix-navigation-menu-viewport-width)]",
-        className,
+        'bg-popover text-popover-foreground relative mt-3 h-[var(--radix-navigation-menu-viewport-height)] origin-[top_center] overflow-hidden rounded-3 border border-border transition-[width,_height] duration-200 data-[state=closed]:animate-scale-out data-[state=open]:animate-scale-in md:w-[var(--radix-navigation-menu-viewport-width)]',
+        className
       )}
       ref={ref}
       {...props}

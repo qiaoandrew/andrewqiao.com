@@ -6,6 +6,8 @@ import tdLogo from '../../../public/img/logos/td-logo.png';
 import uoftLogo from '../../../public/img/logos/uoft-logo.png';
 import GradientText from '@/components/typography/GradientText';
 import Experience from '@/components/elements/Experience';
+import ExperienceButton from '../buttons/ExperienceButton';
+import { MicroscopeIcon } from 'lucide-react';
 
 const EXPERIENCES = [
   {
@@ -16,6 +18,7 @@ const EXPERIENCES = [
     location: 'Toronto, ON',
     points: ['Recently started this exciting new role!'],
     icon: ibmLogo,
+    buttons: [],
   },
   {
     id: 'uhn',
@@ -29,6 +32,14 @@ const EXPERIENCES = [
       'Skills: Next.js, React.js, Google Cloud, Firebase, TypeScript, Python, Tailwind CSS',
     ],
     icon: uhnLogo,
+    buttons: [
+      <ExperienceButton Icon={MicroscopeIcon} key="published-research">
+        Published Research
+      </ExperienceButton>,
+      <ExperienceButton Icon={MicroscopeIcon} key="published-research">
+        Published Research
+      </ExperienceButton>,
+    ],
   },
   {
     id: 'td',
@@ -43,6 +54,7 @@ const EXPERIENCES = [
       'Implemented thorough testing frameworks using the Python unittest library, fixing 20+ bugs',
     ],
     icon: tdLogo,
+    buttons: [],
   },
   {
     id: 'uoft',
@@ -57,6 +69,7 @@ const EXPERIENCES = [
       'Skills: Next.js, React.js, Google Cloud, Firebase, JavaScript, Tailwind CSS',
     ],
     icon: uoftLogo,
+    buttons: [],
   },
 ];
 
@@ -68,7 +81,7 @@ export default function Experiences() {
       </h2>
       <div className="grid md:gap-21">
         {EXPERIENCES.map(
-          ({ id, company, role, date, location, points, icon }, i) => (
+          ({ id, company, role, date, location, points, icon, buttons }, i) => (
             <Fragment key={id}>
               <Experience
                 company={company}
@@ -77,6 +90,7 @@ export default function Experiences() {
                 location={location}
                 points={points}
                 icon={icon}
+                buttons={buttons}
               />
               {i !== EXPERIENCES.length - 1 && (
                 <hr className="mb-6 mt-9 text-border md:hidden" />

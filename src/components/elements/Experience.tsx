@@ -11,6 +11,7 @@ type ExperienceProps = {
   location: string;
   points: string[];
   icon: StaticImageData;
+  buttons: React.ReactNode[];
 };
 
 export default function Experience({
@@ -20,6 +21,7 @@ export default function Experience({
   location,
   points,
   icon,
+  buttons,
 }: ExperienceProps) {
   return (
     <div className="md:flex md:justify-between md:gap-7">
@@ -62,6 +64,11 @@ export default function Experience({
             />
           ))}
         </ul>
+        {buttons.length > 0 && (
+          <div className="mt-8 flex flex-col gap-5 xs:flex-row md:mt-10 md:flex-col lg:flex-row">
+            {buttons}
+          </div>
+        )}
       </div>
     </div>
   );
