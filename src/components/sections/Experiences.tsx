@@ -28,7 +28,7 @@ const EXPERIENCES = [
     location: 'Toronto, ON',
     points: [
       'Evaluated AI effectiveness in diagnosing 100+ health conditions by building a GPT-4V platform',
-      "Assisted 8 clinicians at Canada's largest research hospital in determining AI's suitably for clinical care and education",
+      "Assisted 8 clinicians at Canada's largest research hospital in determining AI's suitability for clinical care and education",
       'Skills: Next.js, React.js, Google Cloud, Firebase, TypeScript, Python, Tailwind CSS',
     ],
     icon: uhnLogo,
