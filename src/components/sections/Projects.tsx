@@ -4,27 +4,30 @@ import ID from '@/components/navigation/ID';
 
 const PROJECTS = [
   {
-    id: 'pethsapp',
-    title: 'Pethsapp',
-    type: 'Mobile App',
+    id: 'remax',
+    title: 'RE/MAX',
+    href: '/projects/remax',
+    type: 'Web App',
+    mockup: pethsappMockup,
+  },
+  {
+    id: 'quadratic-ui',
+    title: 'quadratic/ui',
+    type: 'Coming soon...',
     mockup: pethsappMockup,
   },
   {
     id: 'pethsapp',
     title: 'Pethsapp',
+    href: '/projects/pethsapp',
     type: 'Mobile App',
     mockup: pethsappMockup,
   },
   {
-    id: 'pethsapp',
-    title: 'Pethsapp',
-    type: 'Mobile App',
-    mockup: pethsappMockup,
-  },
-  {
-    id: 'pethsapp',
-    title: 'Pethsapp',
-    type: 'Mobile App',
+    id: 'uwdsc',
+    title: 'UW Data Science',
+    href: '/projects/uwdsc',
+    type: 'Club Website',
     mockup: pethsappMockup,
   },
 ];
