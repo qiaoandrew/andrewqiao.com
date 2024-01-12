@@ -32,6 +32,17 @@ const config: Config = {
       16: '64px',
       full: '9999px',
     },
+    boxShadow: {
+      none: 'none',
+      'btn-light': '0px 0px 12px 4px rgba(0, 0, 0, 0.05)',
+      'btn-dark': '0px 0px 12px 4px rgba(255, 255, 255, 0.05)',
+      'btn-md-light': '0px 0px 12px 4px rgba(0, 0, 0, 0.20)',
+      'btn-md-dark': '0px 0px 12px 4px rgba(255, 255, 255, 0.20)',
+      'card-light': '0px 0px 12px 8px rgba(0, 0, 0, 0.05)',
+      'card-dark': '0px 0px 12px 8px rgba(255, 255, 255, 0.05)',
+      'card-md-light': '0px 0px 16px 8px rgba(0, 0, 0, 0.09)',
+      'card-md-dark': '0px 0px 16px 8px rgba(255, 255, 255, 0.09)',
+    },
     colors: {
       transparent: 'transparent',
       background: 'hsl(var(--background))',

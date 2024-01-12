@@ -3,5 +3,7 @@ type InputFeedbackProps = {
 };
 
 export default function InputFeedback({ children }: InputFeedbackProps) {
-  return <p className="text-destructive-foreground mt-3 text-4">{children}</p>;
+  return (
+    <p className="text-destructive-foreground mt-2.5 text-3.5">{children}</p>
+  );
 }
