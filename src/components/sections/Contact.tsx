@@ -1,10 +1,12 @@
 import GradientText from '@/components/typography/GradientText';
 import ContactForm from '@/components/forms/ContactForm';
+import ID from '@/components/navigation/ID';
 
 export default function Contact() {
   return (
     <section className="bg-light-contact-gradient dark:bg-dark-contact-gradient">
-      <div className="pb-30 xl:gap-30 md:pb-50 container pt-12 md:grid md:grid-cols-[minmax(0,.9fr)_minmax(0,1fr)] md:gap-12 md:pt-21">
+      <ID id="contact" />
+      <div className="container pb-30 pt-12 md:grid md:grid-cols-[minmax(0,.9fr)_minmax(0,1fr)] md:gap-12 md:pb-50 md:pt-21 xl:gap-30">
         <div className="mb-8 xs:mb-10">
           <h1 className="mb-2 font-display text-7 font-bold xs:mb-3 xs:text-9 xl:mb-4 xl:text-11">
             <GradientText>Let&apos;s get in touch.</GradientText>

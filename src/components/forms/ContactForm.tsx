@@ -3,7 +3,9 @@
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Loader2Icon } from 'lucide-react';
 
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { Form, FormField, FormItem } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
@@ -96,9 +98,22 @@ export default function ContactForm() {
           <Button
             type="submit"
             size="sm"
-            className="w-full xs:w-[110px] xs:rounded-3 xs:py-3 xs:text-4.5"
+            disabled={form.formState.isSubmitting}
+            className="w-full disabled:opacity-100 xs:w-[110px] xs:rounded-3 xs:py-3 xs:text-4.5"
           >
-            Submit
+            <span
+              className={cn(form.formState.isSubmitting && 'text-transparent')}
+            >
+              Submit
+            </span>
+            <Loader2Icon
+              size={20}
+              strokeWidth="2.4"
+              className={cn(
+                'absolute hidden animate-spin',
+                form.formState.isSubmitting && 'block'
+              )}
+            />
           </Button>
         </GradientBorder>
       </form>

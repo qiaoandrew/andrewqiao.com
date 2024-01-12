@@ -8,6 +8,7 @@ import uoftLogo from '../../../public/img/logos/uoft-logo.png';
 import GradientText from '@/components/typography/GradientText';
 import ExperienceItem from '@/components/elements/ExperienceItem';
 import ExperienceButton from '../buttons/ExperienceButton';
+import ID from '@/components/navigation/ID';
 
 const EXPERIENCES = [
   {
@@ -76,6 +77,7 @@ const EXPERIENCES = [
 export default function Experiences() {
   return (
     <section className="container mb-30 md:mb-50">
+      <ID id="experiences" />
       <h2 className="mb-5 font-display text-7 font-bold md:mb-6 md:text-10">
         <GradientText>Experiences</GradientText>
       </h2>

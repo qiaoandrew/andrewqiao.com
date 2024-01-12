@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import headshot from '../../../public/img/headshot.png';
 import { Button } from '@/components/ui/Button';
 import GradientBorder from '@/components/ui/GradientBorder';
+import ID from '@/components/navigation/ID';
 
 const ABOUT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat lectus massa, sit amet pellentesque mauris molestie porta. Morbi semper dolor neque, quis sodales dolor malesuada in. Nulla at urna at libero malesuada imperdiet eget eu nunc. Integer ac dolor in tortor porttitor commodo euismod ut magna.
 
@@ -12,7 +14,8 @@ Sed facilisis ornare suscipit. Lorem ipsum dolor sit amet, consectetur adipiscin
 
 export default function About() {
   return (
-    <section className="mb-30 md:mb-50 container">
+    <section className="container mb-30 md:mb-50">
+      <ID id="about" />
       <div className="mx-auto max-w-[440px] md:max-w-[580px]">
         <Image
           src={headshot}
@@ -21,13 +24,13 @@ export default function About() {
           height={180}
           className="mx-auto mb-9 w-40 rounded-full md:mb-12 md:w-[180px]"
         />
-        <p className="md:mb-25 mx-auto mb-16 whitespace-pre-line font-display text-4 text-foreground md:text-4.5">
+        <p className="mx-auto mb-16 whitespace-pre-line font-display text-4 text-foreground md:mb-25 md:text-4.5">
           {ABOUT}
         </p>
         <div className="flex justify-stretch sm:justify-center">
           <GradientBorder borderRadius="rounded-[13px] md:rounded-[17px] w-full md:w-auto">
-            <Button size="lg" className="w-full">
-              Contact Me
+            <Button size="lg" asChild className="w-full">
+              <Link href="/#contact">Contact Me</Link>
             </Button>
           </GradientBorder>
         </div>
