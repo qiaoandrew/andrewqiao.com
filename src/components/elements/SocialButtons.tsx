@@ -44,7 +44,7 @@ export default function SocialButtons() {
           <a
             href={href}
             target="_blank"
-            rel="noreferrer noopenner"
+            rel="noreferrer noopener"
             className={cn(buttonVariants({ size: 'icon-md' }), 'rounded-[7px]')}
           >
             {icon}

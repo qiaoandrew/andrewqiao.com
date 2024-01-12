@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { MicroscopeIcon } from 'lucide-react';
+import { BookOpenIcon, MicroscopeIcon } from 'lucide-react';
 
 import ibmLogo from '../../../public/img/logos/ibm-logo.png';
 import uhnLogo from '../../../public/img/logos/uhn-logo.png';
@@ -17,7 +17,7 @@ const EXPERIENCES = [
     role: 'Software Developer Intern',
     date: 'Jan 2024 - Present',
     location: 'Toronto, ON',
-    points: ['Recently started this exciting new role!'],
+    points: ['Recently started this exciting role on an exciting team!'],
     icon: ibmLogo,
     buttons: [],
   },
@@ -28,16 +28,17 @@ const EXPERIENCES = [
     date: 'Oct 2023 - Dec 2023',
     location: 'Toronto, ON',
     points: [
-      'Evaluated AI effectiveness in diagnosing 100+ health conditions by building a GPT-4V platform',
-      "Assisted 8 clinicians at Canada's largest research hospital in determining AI's suitability for clinical care and education",
-      'Skills: Next.js, React.js, Google Cloud, Firebase, TypeScript, Python, Tailwind CSS',
+      "Deployed an app integrated with GPT-4V to evaluate AI's effectiveness in diagnosing <strong>100+</strong> medical conditions",
+      "Assisted <strong>8 clinicians</strong> at Canada's largest research hospital in assessing AI's applicability for clinical care and education, contributing to published medical research",
+      '<strong>Skills</strong>: Next.js, React.js, Google Cloud, Firebase, TypeScript, Python, Tailwind CSS',
     ],
     icon: uhnLogo,
     buttons: [
-      <ExperienceButton Icon={MicroscopeIcon} key="published-research">
-        Published Research
-      </ExperienceButton>,
-      <ExperienceButton Icon={MicroscopeIcon} key="published-research">
+      <ExperienceButton
+        href="https://www.medrxiv.org/content/10.1101/2023.11.15.23298575v1"
+        Icon={MicroscopeIcon}
+        key="published-research"
+      >
         Published Research
       </ExperienceButton>,
     ],
@@ -49,10 +50,11 @@ const EXPERIENCES = [
     date: 'May 2023 - Aug 2023',
     location: 'Toronto, ON',
     points: [
-      'Developed a distributed system to defer model recalculations using Celery and Python, saving 10+ hours a week in waiting on synchronous tasks',
-      'Automated trade report generation using Django and SQL, removing 5+ hours a week of data entry',
-      'Decreased tool loading speed by 67%, removing excessive API calls by applying React best practices',
-      'Implemented thorough testing frameworks using the Python unittest library, fixing 20+ bugs',
+      'Saved Portfolio Managers <strong>10+ hours a week</strong> in waiting on synchronous tasks by developing a distributed system to defer lengthy portfolio model recalculations using Celery and Python',
+      'Removed <strong>5+ hours a week</strong> of data entry by automating financial report generation with Django and SQL',
+      'Decreased tool loading speed by <strong>67%</strong>, removing excessive API calls by applying React best practices',
+      'Fixed <strong>20+ bugs</strong> by implementing thorough testing frameworks using the Python unittest library',
+      '<strong>Skills:</strong>: React.js, Microsoft Azure, Django, SQL Server, JavaScript, Python, NumPy, Pandas',
     ],
     icon: tdLogo,
     buttons: [],
@@ -64,13 +66,20 @@ const EXPERIENCES = [
     date: 'Oct 2022 - Apr 2023',
     location: 'Toronto, ON',
     points: [
-      "Supervised by Dr. M. Andiappan and Dr. G. Hadfield in analyzing AI's impact on the workforce",
-      'Deployed an AI-powered survey platform to streamline data collection processes for 500+ participants',
-      'Contributed to a university-partnered collaboration with OpenAI',
-      'Skills: Next.js, React.js, Google Cloud, Firebase, JavaScript, Tailwind CSS',
+      "Contributed to a <strong>university-partnered study with OpenAI</strong> on the workforce's perception of AI under the supervision of Dr. M. Andiappan and Dr. G. Hadfield",
+      "Streamlined data collection for the study's <strong>500+ participants</strong> by deploying an AI-powered survey platform",
+      '<strong>Skills</strong>: Next.js, React.js, Google Cloud, Firebase, JavaScript, Node.js, OpenAI API',
     ],
     icon: uoftLogo,
-    buttons: [],
+    buttons: [
+      <ExperienceButton
+        href="https://ihpme.utoronto.ca/2022/06/beyond-myths-dr-meena-andiappan-to-study-attitudes-and-perceptions-of-ai-in-the-workplace/"
+        Icon={BookOpenIcon}
+        key="about-the-study"
+      >
+        About the Study
+      </ExperienceButton>,
+    ],
   },
 ];
 
