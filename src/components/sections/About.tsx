@@ -6,11 +6,13 @@ import { Button } from '@/components/ui/Button';
 import GradientBorder from '@/components/ui/GradientBorder';
 import ID from '@/components/navigation/ID';
 
-const ABOUT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat lectus massa, sit amet pellentesque mauris molestie porta. Morbi semper dolor neque, quis sodales dolor malesuada in. Nulla at urna at libero malesuada imperdiet eget eu nunc. Integer ac dolor in tortor porttitor commodo euismod ut magna.
+const ABOUT = `Hi! I'm Andrew, a Computer Science student at UWaterloo. Currently, I'm interning as a Software Developer at IBM. In the past, I've also interned at TD Bank, the University of Toronto, and University Health Network.
 
-Duis eu orci eget dolor hendrerit egestas nec eget magna. Ut est velit, aliquet id volutpat sit amet, venenatis nec diam. Sed id rhoncus dui. Fusce elementum hendrerit purus a faucibus. Nulla id sodales enim, a volutpat risus.
+For me, programming is all about building and fixing. I want to build easy-to-use products that address meaningful pain points that the people around me experience.
 
-Sed facilisis ornare suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae lectus non odio faucibus imperdiet. Praesent quis fermentum nulla. Duis laoreet feugiat nisi, et feugiat sem tincidunt vel. `;
+In my free time, I love to play tennis, lift weights, and dabble in UI/UX design. I'm always open to meeting new people, so if you're building something interesting or want to chat, please message me!
+
+I'm also currently seeking Summer 2024 internships. If you think I'd be a great match for your team, I'd love to hear from you!`;
 
 export default function About() {
   return (
