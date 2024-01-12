@@ -9,6 +9,7 @@ import { Form, FormField, FormItem } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
 import { Textarea } from '@/components/ui/Textarea';
 import GradientBorder from '@/components/ui/GradientBorder';
+import InputFeedback from '@/components/ui/InputFeedback';
 
 const formSchema = z.object({
   name: z.string().min(1, 'Please enter your name.'),
@@ -51,6 +52,11 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem className="mb-5 xs:mb-6">
               <Input type="text" placeholder="Name" {...field} />
+              {form.formState.errors.name && (
+                <InputFeedback>
+                  {form.formState.errors.name.message}
+                </InputFeedback>
+              )}
             </FormItem>
           )}
         />
@@ -60,6 +66,11 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem className="mb-5 xs:mb-6">
               <Input type="email" placeholder="Email" {...field} />
+              {form.formState.errors.email && (
+                <InputFeedback>
+                  {form.formState.errors.email.message}
+                </InputFeedback>
+              )}
             </FormItem>
           )}
         />
@@ -73,6 +84,11 @@ export default function ContactForm() {
                 {...field}
                 className="h-[160px] xs:h-[200px]"
               />
+              {form.formState.errors.message && (
+                <InputFeedback>
+                  {form.formState.errors.message.message}
+                </InputFeedback>
+              )}
             </FormItem>
           )}
         />

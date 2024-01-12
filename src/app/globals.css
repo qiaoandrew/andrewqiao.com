@@ -13,6 +13,15 @@
     --accent: 0 0% 91%;
     --border: 0 0% 91%;
     --ring: 0 0% 75%;
+    --destructive: 3 92% 95%;
+    --destructive-foreground: 0 67% 42%;
+    --destructive-border: 359 74% 82%;
+    --warning: 53 100% 93%;
+    --warning-foreground: 43 81% 27%;
+    --warning-border: 42 51% 67%;
+    --success: 139 48% 91%;
+    --success-foreground: 153 67% 20%;
+    --success-border: 146 38% 69%;
   }
 
   .dark {
@@ -25,6 +34,15 @@
     --accent: 240 1% 12%;
     --border: 240 1% 12%;
     --ring: 240 5% 27%;
+    --destructive: 4 72% 33%;
+    --destructive-foreground: 3 92% 95%;
+    --destructive-border: 359 42% 55%;
+    --warning: 40 72% 33%;
+    --warning-foreground: 53 100% 93%;
+    --warning-border: 42 43% 55%;
+    --success: 153 67% 20%;
+    --success-foreground: 139 48% 91%;
+    --success-border: 151 49% 34%;
   }
 
   * {

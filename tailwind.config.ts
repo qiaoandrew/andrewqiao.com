@@ -49,6 +49,21 @@ const config: Config = {
       accent: 'hsl(var(--accent))',
       border: 'hsl(var(--border))',
       ring: 'hsl(var(--ring))',
+      destructive: {
+        DEFAULT: 'hsl(var(--destructive) / <alpha-value>)',
+        foreground: 'hsl(var(--destructive-foreground) / <alpha-value>)',
+        border: 'hsl(var(--destructive-border) / <alpha-value>)',
+      },
+      warning: {
+        DEFAULT: 'hsl(var(--warning) / <alpha-value>)',
+        foreground: 'hsl(var(--warning-foreground) / <alpha-value>)',
+        border: 'hsl(var(--warning-border) / <alpha-value>)',
+      },
+      success: {
+        DEFAULT: 'hsl(var(--success) / <alpha-value>)',
+        foreground: 'hsl(var(--success-foreground) / <alpha-value>)',
+        border: 'hsl(var(--success-border) / <alpha-value>)',
+      },
     },
     fontFamily: {
       sans: ['var(--font-inter)', 'sans-serif'],
