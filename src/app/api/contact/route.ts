@@ -1,6 +1,6 @@
 import { resend } from '@/lib/resend';
 
-import ContactEmailTemplate from '@/components/emails/ContactEmailTemplate';
+import ContactFormEmailTemplate from '@/components/emails/ContactFormEmailTemplate';
 
 export async function POST(request: Request) {
   try {
@@ -9,11 +9,11 @@ export async function POST(request: Request) {
       from: 'Personal Website <hello@andrewqiao.com>',
       to: ['andrewqiao2004@gmail.com'],
       subject: 'New Contact Form Submission',
-      react: ContactEmailTemplate({ name, email, message }),
+      react: ContactFormEmailTemplate({ name, email, message }),
     });
-
     return Response.json(data);
   } catch (error: any) {
+    console.error(error);
     return Response.json({ error });
   }
 }

@@ -26,7 +26,21 @@ export default function ContactForm() {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {};
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        form.reset();
+      }
+    } catch (error) {}
+  };
 
   return (
     <Form {...form}>
@@ -36,9 +50,7 @@ export default function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem className="mb-5 xs:mb-6">
-              <GradientBorder borderRadius="rounded-[11px]">
-                <Input type="text" placeholder="Name" {...field} />
-              </GradientBorder>
+              <Input type="text" placeholder="Name" {...field} />
             </FormItem>
           )}
         />
@@ -47,9 +59,7 @@ export default function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem className="mb-5 xs:mb-6">
-              <GradientBorder borderRadius="rounded-[11px]">
-                <Input type="email" placeholder="Email" {...field} />
-              </GradientBorder>
+              <Input type="email" placeholder="Email" {...field} />
             </FormItem>
           )}
         />
@@ -58,13 +68,11 @@ export default function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem className="mb-12 xs:mb-16">
-              <GradientBorder borderRadius="rounded-[11px]">
-                <Textarea
-                  placeholder="Message"
-                  {...field}
-                  className="h-[160px] xs:h-[200px]"
-                />
-              </GradientBorder>
+              <Textarea
+                placeholder="Message"
+                {...field}
+                className="h-[160px] xs:h-[200px]"
+              />
             </FormItem>
           )}
         />

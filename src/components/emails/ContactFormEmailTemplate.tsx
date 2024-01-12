@@ -1,14 +1,14 @@
-type ContactEmailTemplateProps = {
+type ContactFormEmailTemplateProps = {
   name: string;
   email: string;
   message: string;
 };
 
-export default function ContactEmailTemplate({
+export default function ContactFormEmailTemplate({
   name,
   email,
   message,
-}: ContactEmailTemplateProps) {
+}: ContactFormEmailTemplateProps) {
   return (
     <div>
       <p>Name: {name}</p>
