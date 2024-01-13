@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 import {
   NavigationMenu,
@@ -10,16 +10,23 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/NavigationMenu";
-import NavigationMenuItemsCardList from "@/components/navigation/NavigationMenuItemsCardList";
-import NavigationMenuListItemCard from "@/components/navigation/NavigationMenuListItemCard";
-import NavigationMenuListItem from "@/components/navigation/NavigationMenulistItem";
+} from '@/components/ui/NavigationMenu';
+import NavigationMenuItemsCardList from '@/components/navigation/NavigationMenuItemsCardList';
+import NavigationMenuListItemCard from '@/components/navigation/NavigationMenuListItemCard';
+import NavigationMenuListItem from '@/components/navigation/NavigationMenulistItem';
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="hidden md:flex font-display">
+    <NavigationMenu className="hidden font-display md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
+          <Link href="#projects" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Projects
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuItemsCardList>
@@ -34,8 +41,9 @@ export default function Navbar() {
                 title="quadratic/ui"
                 href="/projects/quadratic-ui"
                 isRoute
+                disabled
               >
-                My personal open-sourced React component library.
+                A Next.js component library. Coming soon...
               </NavigationMenuListItem>
               <NavigationMenuListItem
                 title="Pethsapp"
@@ -53,7 +61,7 @@ export default function Navbar() {
               </NavigationMenuListItem>
             </NavigationMenuItemsCardList>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <Link href="#experiences" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
