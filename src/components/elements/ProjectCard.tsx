@@ -1,22 +1,10 @@
 import Link from 'next/link';
 import Image, { type StaticImageData } from 'next/image';
-import { cva } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/Badge';
 import GradientBorder from '@/components/ui/GradientBorder';
 import GradientText from '@/components/typography/GradientText';
-
-const projectCardImageVariants = cva('absolute', {
-  variants: {
-    variant: {
-      remax: '',
-      'quadratic-ui': 'absolute inset-0',
-      pethsapp: 'right-[15%] top-1/2 w-[42%] -translate-y-1/2',
-      uwdsc: '',
-    },
-  },
-});
 
 type ProjectCardProps = {
   id: string;
@@ -25,7 +13,6 @@ type ProjectCardProps = {
   href?: string;
   lightMockup: StaticImageData;
   darkMockup: StaticImageData;
-  imageVariant: 'remax' | 'quadratic-ui' | 'pethsapp' | 'uwdsc';
 };
 
 export default function ProjectCard({
@@ -35,25 +22,18 @@ export default function ProjectCard({
   href,
   lightMockup,
   darkMockup,
-  imageVariant,
 }: ProjectCardProps) {
   const cardContent = (
     <div className="relative aspect-[35/22] overflow-hidden rounded-5 bg-background xs:rounded-6 md:rounded-5 xl:rounded-6">
       <Image
         src={lightMockup}
         alt={`${title} mockup`}
-        className={cn(
-          'dark:hidden',
-          projectCardImageVariants({ variant: imageVariant })
-        )}
+        className={cn('absolute inset-0 dark:hidden')}
       />
       <Image
         src={darkMockup}
         alt={`${title} mockup`}
-        className={cn(
-          'hidden dark:block',
-          projectCardImageVariants({ variant: imageVariant })
-        )}
+        className={cn('absolute inset-0 hidden dark:block')}
       />
       <div className="absolute inset-0 bg-light-card-bottom-gradient dark:bg-dark-card-bottom-gradient" />
       <h3 className="absolute bottom-6 left-6 font-display text-6 font-bold xs:bottom-8 xs:left-8 xs:text-8 md:bottom-6 md:left-6 md:text-6 xl:bottom-8 xl:left-8 xl:text-8">
