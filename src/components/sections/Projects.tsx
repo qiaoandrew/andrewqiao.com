@@ -32,7 +32,7 @@ const PROJECTS = [
   {
     id: 'uwdsc',
     title: 'UW Data Science',
-    href: '/projects/uwdsc',
+    href: 'https://www.uwdatascience.ca/',
     type: 'Club Website',
     lightMockup: pethsappLightMockup,
     darkMockup: pethsappDarkMockup,

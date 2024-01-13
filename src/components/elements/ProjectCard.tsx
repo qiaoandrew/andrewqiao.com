@@ -50,7 +50,13 @@ export default function ProjectCard({
   return (
     <GradientBorder borderRadius="transition-shadow duration-200 rounded-[21px] xs:rounded-[25px] md:rounded-[21px] xl:rounded-[25px] shadow-card-light dark:shadow-card-dark md:odd:translate-y-9 hover:shadow-card-md-light dark:hover:shadow-card-md-dark">
       {href ? (
-        <Link href={`/projects/${id}`}>{cardContent}</Link>
+        href.startsWith('/') ? (
+          <Link href={href}>{cardContent}</Link>
+        ) : (
+          <a href={href} target="_blank" rel="noreferrer noopener">
+            {cardContent}
+          </a>
+        )
       ) : (
         <div className="hover:cursor-wait">{cardContent}</div>
       )}
