@@ -1,7 +1,9 @@
-import pethsappLightMockup from '../../../public/img/mockups/pethsapp-1-light.svg';
-import pethsappDarkMockup from '../../../public/img/mockups/pethsapp-1-dark.svg';
+import remaxMockup from '../../../public/img/mockups/remax-1.svg';
 import quadraticUILightMockup from '../../../public/img/mockups/quadratic-ui-1-light.svg';
 import quadraticUIDarkMockup from '../../../public/img/mockups/quadratic-ui-1-dark.svg';
+import pethsappLightMockup from '../../../public/img/mockups/pethsapp-1-light.svg';
+import pethsappDarkMockup from '../../../public/img/mockups/pethsapp-1-dark.svg';
+import uwdscMockup from '../../../public/img/mockups/uwdsc-1.svg';
 import ProjectCard from '@/components/elements/ProjectCard';
 import ID from '@/components/navigation/ID';
 
@@ -9,10 +11,10 @@ const PROJECTS = [
   {
     id: 'remax',
     title: 'RE/MAX',
-    // href: '/projects/remax',
-    type: 'Coming soon...',
-    lightMockup: pethsappLightMockup,
-    darkMockup: pethsappDarkMockup,
+    href: 'https://www.preconstruction.app',
+    type: 'Web App',
+    lightMockup: remaxMockup,
+    darkMockup: remaxMockup,
   },
   {
     id: 'quadratic-ui',
@@ -34,8 +36,8 @@ const PROJECTS = [
     title: 'UW Data Science',
     href: 'https://www.uwdatascience.ca/',
     type: 'Club Website',
-    lightMockup: pethsappLightMockup,
-    darkMockup: pethsappDarkMockup,
+    lightMockup: uwdscMockup,
+    darkMockup: uwdscMockup,
   },
 ];
 
