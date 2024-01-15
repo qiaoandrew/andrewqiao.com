@@ -21,7 +21,7 @@ export default function ThemeToggle() {
       variant="ghost"
       size="icon-lg"
       onClick={changeTheme}
-      className="bg-transparent shadow-none hover:bg-transparent hover:shadow-none dark:bg-transparent dark:shadow-none dark:hover:bg-transparent dark:hover:shadow-none"
+      className="bg-transparent shadow-none md:hover:bg-transparent md:hover:shadow-none dark:bg-transparent dark:shadow-none md:dark:hover:bg-transparent md:dark:hover:shadow-none"
     >
       <SunIcon className="h-5 w-5 text-primary-foreground dark:hidden" />
       <MoonIcon className="hidden h-5 w-5 text-primary-foreground dark:block" />

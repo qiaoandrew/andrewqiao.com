@@ -21,7 +21,7 @@ export default function NavigationMenuListItem({
   children,
 }: NavigationMenuListItemProps) {
   const navigationMenuListItemStyle = cn(
-    'block select-none space-y-1 rounded-2 px-3 py-2.5 no-underline outline-none transition-colors duration-200 hover:bg-accent focus:bg-accent',
+    'block select-none space-y-1 rounded-2 px-3 py-2.5 no-underline outline-none transition-colors duration-200 md:hover:bg-accent focus:bg-accent',
     className
   );
 
@@ -38,7 +38,7 @@ export default function NavigationMenuListItem({
         <div
           className={cn(
             navigationMenuListItemStyle,
-            'opacity-80 hover:cursor-wait hover:bg-transparent'
+            'opacity-80 md:hover:cursor-wait md:hover:bg-transparent'
           )}
         >
           {navigationMenuListItemText}

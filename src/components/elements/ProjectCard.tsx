@@ -24,16 +24,20 @@ export default function ProjectCard({
   darkMockup,
 }: ProjectCardProps) {
   const cardContent = (
-    <div className="relative aspect-[35/22] overflow-hidden rounded-5 bg-background xs:rounded-6 md:rounded-5 xl:rounded-6">
+    <div className="group relative aspect-[35/22] overflow-hidden rounded-5 bg-background xs:rounded-6 md:rounded-5 xl:rounded-6">
       <Image
         src={lightMockup}
         alt={`${title} mockup`}
-        className={cn('absolute inset-0 dark:hidden')}
+        className={cn(
+          'absolute inset-0 transition-transform duration-200 md:group-hover:scale-105 dark:hidden'
+        )}
       />
       <Image
         src={darkMockup}
         alt={`${title} mockup`}
-        className={cn('absolute inset-0 hidden dark:block')}
+        className={cn(
+          'absolute inset-0 hidden transition-transform duration-200 md:group-hover:scale-105 dark:block'
+        )}
       />
       <div className="absolute inset-0 bg-light-card-bottom-gradient dark:bg-dark-card-bottom-gradient" />
       <h3 className="absolute bottom-6 left-6 font-display text-6 font-bold xs:bottom-8 xs:left-8 xs:text-8 md:bottom-6 md:left-6 md:text-6 xl:bottom-8 xl:left-8 xl:text-8">
@@ -58,7 +62,7 @@ export default function ProjectCard({
           </a>
         )
       ) : (
-        <div className="hover:cursor-wait">{cardContent}</div>
+        <div className="dm:hover:cursor-wait">{cardContent}</div>
       )}
     </GradientBorder>
   );

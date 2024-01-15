@@ -79,7 +79,7 @@ export default function FooterMenu() {
           {group.items.map((item) => (
             <Link
               href={item.href}
-              className="font-display text-3.5 font-medium text-secondary-foreground transition-colors duration-200 hover:text-primary-foreground 3xs:text-4"
+              className="font-display text-3.5 font-medium text-secondary-foreground transition-colors duration-200 3xs:text-4 md:hover:text-primary-foreground"
               key={item.id}
             >
               {item.title}
