@@ -1,8 +1,8 @@
+import Image from 'next/image';
+
 import { cn } from '@/lib/utils';
 import type { Block, BlockChild } from '@/types/types';
 import GradientText from '@/components/typography/GradientText';
-import Image from 'next/image';
-import { Fragment } from 'react';
 
 type ProjectBodyProps = {
   body: Block[];

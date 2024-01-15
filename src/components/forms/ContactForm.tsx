@@ -1,5 +1,6 @@
 'use client';
 
+import { toast } from 'sonner';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -39,10 +40,12 @@ export default function ContactForm() {
         body: JSON.stringify(values),
       });
 
-      if (response.ok) {
-        form.reset();
-      }
-    } catch (error) {}
+      form.reset();
+      toast.success('Message sent successfully!');
+    } catch (error) {
+      console.error(error);
+      toast.error('Something went wrong. Please try again later.');
+    }
   };
 
   return (

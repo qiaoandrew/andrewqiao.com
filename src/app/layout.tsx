@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { inter, interDisplay } from '@/lib/fonts';
 import Providers from '@/components/providers/Providers';
 import Header from '@/components/navigation/Header';
+import { Toaster } from '@/components/ui/Toaster';
 
 export const metadata: Metadata = {
   title: 'Andrew Qiao',
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
         </Providers>
+        <Toaster />
       </body>
     </html>
   );
