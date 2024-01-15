@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import headshot from '../../../public/img/headshot.png';
+import headshot from '../../../../public/img/headshot.png';
 import { Button } from '@/components/ui/Button';
 import GradientBorder from '@/components/ui/GradientBorder';
 import ID from '@/components/navigation/ID';

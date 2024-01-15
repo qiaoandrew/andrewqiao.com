@@ -1,4 +1,4 @@
-import GradientText from '../typography/GradientText';
+import GradientText from '../../typography/GradientText';
 
 export default function Hero() {
   return (

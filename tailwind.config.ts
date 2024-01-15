@@ -94,6 +94,7 @@ const config: Config = {
       10: ['40px', '52px'],
       11: ['44px', '56px'],
       12: ['48px', '60px'],
+      16: ['64px', '88px'],
     },
     lineHeight: {
       1: '4px',

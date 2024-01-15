@@ -18,14 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link
-          rel="icon"
-          href="/icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
-      </head>
       <body
         className={cn(
           'bg-background font-sans',
@@ -35,7 +27,7 @@ export default function RootLayout({
       >
         <Providers>
           <Header />
-          {children}
+          <main>{children}</main>
         </Providers>
       </body>
     </html>

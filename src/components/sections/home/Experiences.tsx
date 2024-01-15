@@ -1,13 +1,13 @@
 import { Fragment } from 'react';
 import { BookOpenIcon, MicroscopeIcon } from 'lucide-react';
 
-import ibmLogo from '../../../public/img/logos/ibm-logo.png';
-import uhnLogo from '../../../public/img/logos/uhn-logo.png';
-import tdLogo from '../../../public/img/logos/td-logo.png';
-import uoftLogo from '../../../public/img/logos/uoft-logo.png';
+import ibmLogo from '../../../../public/img/logos/ibm-logo.png';
+import uhnLogo from '../../../../public/img/logos/uhn-logo.png';
+import tdLogo from '../../../../public/img/logos/td-logo.png';
+import uoftLogo from '../../../../public/img/logos/uoft-logo.png';
 import GradientText from '@/components/typography/GradientText';
 import ExperienceItem from '@/components/elements/ExperienceItem';
-import ExperienceButton from '../buttons/ExperienceButton';
+import ExperienceButton from '@/components/buttons/ExperienceButton';
 import ID from '@/components/navigation/ID';
 
 const EXPERIENCES = [
