@@ -41,12 +41,11 @@ const FOOTER_MENU = [
       {
         id: 'remax',
         title: 'RE/MAX',
-        href: '/projects/remax',
+        href: 'https://www.preconstruction.app/',
       },
       {
         id: 'quadratic-ui',
         title: 'quadratic/ui',
-        href: '/projects/quadratic-ui',
       },
       {
         id: 'pethsapp',
@@ -56,7 +55,7 @@ const FOOTER_MENU = [
       {
         id: 'uwdsc',
         title: 'UWaterloo Data Science',
-        href: '/projects/uwdsc',
+        href: 'https://www.uwdatascience.ca/',
       },
     ],
   },
@@ -76,15 +75,40 @@ export default function FooterMenu() {
           <h4 className="text-white text-3.5 font-bold 3xs:text-4">
             {group.title}
           </h4>
-          {group.items.map((item) => (
-            <Link
-              href={item.href}
-              className="font-display text-3.5 font-medium text-secondary-foreground transition-colors duration-200 3xs:text-4 md:hover:text-primary-foreground"
-              key={item.id}
-            >
-              {item.title}
-            </Link>
-          ))}
+          {group.items.map(({ id, title, href }) => {
+            const className = cn(
+              'font-display text-3.5 font-medium transition-colors duration-200 3xs:text-4',
+              href
+                ? 'text-secondary-foreground md:hover:text-primary-foreground'
+                : 'text-muted-foreground'
+            );
+
+            if (!href) {
+              return (
+                <p className={className} key={id}>
+                  {title}
+                </p>
+              );
+            } else if (href.startsWith('/')) {
+              return (
+                <Link href={href} className={className} key={id}>
+                  {title}
+                </Link>
+              );
+            } else {
+              return (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className={className}
+                  key={id}
+                >
+                  {title}
+                </a>
+              );
+            }
+          })}
         </div>
       ))}
     </nav>
