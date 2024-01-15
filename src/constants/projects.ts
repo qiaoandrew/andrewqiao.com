@@ -1,12 +1,13 @@
 import { SiAppstore } from 'react-icons/si';
-import { FcGoogle } from 'react-icons/fc';
+import { FaGoogle } from 'react-icons/fa';
 
 import pethsapp2LightMockup from '../../public/img/mockups/pethsapp-2-light.png';
 import pethsapp2DarkMockup from '../../public/img/mockups/pethsapp-2-dark.png';
 import pethsapp3LightMockup from '../../public/img/mockups/pethsapp-3-light.png';
 import pethsapp3DarkMockup from '../../public/img/mockups/pethsapp-3-dark.png';
+import type { Project } from '@/types/types';
 
-export const PROJECTS = {
+export const PROJECTS: Record<string, Project> = {
   pethsapp: {
     id: 'pethsapp',
     title: 'Pethsapp',
@@ -24,18 +25,18 @@ export const PROJECTS = {
       'Figma',
     ],
     skills: ['Mobile Development', 'UI/UX Design', 'User Research'],
-    links: [
+    buttons: [
       {
         id: 'app-store',
         title: 'App Store',
-        url: 'https://apps.apple.com/ca/app/pethsapp/id1544635100',
+        href: 'https://apps.apple.com/ca/app/pethsapp/id1544635100',
         Icon: SiAppstore,
       },
       {
         id: 'google-play',
         title: 'Google Play',
-        url: 'https://play.google.com/store/apps/details?id=com.trudeausac.pethsapp&hl=en_CA&gl=US',
-        Icon: FcGoogle,
+        href: 'https://play.google.com/store/apps/details?id=com.trudeausac.pethsapp&hl=en_CA&gl=US',
+        Icon: FaGoogle,
       },
     ],
     body: [
