@@ -86,7 +86,7 @@ export const PROJECTS: Record<string, Project> = {
           {
             style: 'span',
             marks: [],
-            text: 'It serves as the school’s mobile hub, helping students stay updated on school events, announcements, and new opportunities.',
+            text: "It serves as the school's mobile hub, helping students stay updated on school events, announcements, and new opportunities.",
           },
         ],
       },
