@@ -15,10 +15,11 @@ export default function ProjectDetails({
   buttons,
 }: ProjectDetailsProps) {
   return (
-    <div className="md:w-[300px]">
+    <div className="flex-shrink-0 md:w-[300px]">
       <div className="mb-6">
-        <h3 className="mb-0.5 font-display text-4.5 font-bold xl:text-5">
+        <h3 className="relative mb-0.5 font-display text-4.5 font-bold xl:text-5">
           <GradientText>Technologies</GradientText>
+          <div className="absolute -left-5 top-1/2 hidden h-5 w-0.5 -translate-y-1/2 bg-muted-foreground 2xl:block" />
         </h3>
         <p className="text-4 text-foreground">
           {technologies.map((technology, index) => (
@@ -30,8 +31,9 @@ export default function ProjectDetails({
         </p>
       </div>
       <div className="mb-12">
-        <h3 className="mb-0.5 font-display text-4.5 font-bold xl:text-5">
+        <h3 className="relative mb-0.5 font-display text-4.5 font-bold xl:text-5">
           <GradientText>Skills</GradientText>
+          <div className="absolute -left-5 top-1/2 hidden h-5 w-0.5 -translate-y-1/2 bg-muted-foreground 2xl:block" />
         </h3>
         <p className="text-4 text-foreground">
           {skills.map((skill, index) => (

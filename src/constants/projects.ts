@@ -44,8 +44,9 @@ export const PROJECTS: Record<string, Project> = {
         style: 'h1',
         children: [
           {
+            style: 'span',
             marks: [],
-            text: '[0]: Going Mobile',
+            text: 'About',
           },
         ],
       },
@@ -53,29 +54,45 @@ export const PROJECTS: Record<string, Project> = {
         style: 'p',
         children: [
           {
+            style: 'span',
             marks: [],
             text: 'Pethsapp is the official mobile app of my former high school, Pierre Elliott Trudeau High School. It has ',
           },
           {
+            style: 'span',
             marks: ['strong'],
             text: '1200+ users',
           },
           {
+            style: 'span',
             marks: [],
             text: ', including students, parents, and teachers in the school community. Upon release, it peaked at ',
           },
           {
+            style: 'span',
             marks: ['strong'],
             text: 'Top 15 on the Apple App Store Education Chart',
           },
           {
+            style: 'span',
             marks: [],
             text: '.',
           },
         ],
       },
       {
+        style: 'p',
+        children: [
+          {
+            style: 'span',
+            marks: [],
+            text: 'It serves as the school’s mobile hub, helping students stay updated on school events, announcements, and new opportunities.',
+          },
+        ],
+      },
+      {
         style: 'img',
+        alt: 'pethsapp mockup 1',
         srcLight: pethsapp3LightMockup,
         srcDark: pethsapp3DarkMockup,
       },

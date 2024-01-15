@@ -4,6 +4,7 @@ import { PROJECTS } from '@/constants/projects';
 import ProjectIntroduction from '@/components/sections/project/ProjectIntroduction';
 import ProjectDetails from '@/components/sections/project/ProjectDetails';
 import Footer from '@/components/navigation/Footer';
+import ProjectBody from '@/components/sections/project/ProjectBody';
 
 type ProjectPageProps = {
   params: { slug: string };
@@ -21,7 +22,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <div className="container mb-36 md:mb-50">
+      <div className="container mb-36 md:mb-44">
         <ProjectIntroduction
           title={title}
           type={type}
@@ -29,13 +30,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           mockupLight={mockupLight}
           mockupDark={mockupDark}
         />
-        <div className="md:flex md:gap-12 xl:gap-18">
+        <div className="flex flex-col gap-16 md:flex-row md:gap-12 xl:gap-18">
           <ProjectDetails
             technologies={PROJECTS[slug as keyof typeof PROJECTS].technologies}
             skills={PROJECTS[slug as keyof typeof PROJECTS].skills}
             buttons={PROJECTS[slug as keyof typeof PROJECTS].buttons}
           />
-          <div></div>
+          <ProjectBody body={PROJECTS[slug as keyof typeof PROJECTS].body} />
         </div>
       </div>
       <Footer />
