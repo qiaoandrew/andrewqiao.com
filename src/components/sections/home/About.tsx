@@ -30,7 +30,7 @@ export default function About() {
           {ABOUT}
         </p>
         <div className="flex justify-stretch sm:justify-center">
-          <GradientBorder borderRadius="rounded-[13px] md:rounded-[17px] w-full md:w-auto">
+          <GradientBorder borderRadius="rounded-[13px] md:rounded-[15px] w-full md:w-auto">
             <Button size="lg" asChild className="w-full">
               <Link href="/#contact">Contact Me</Link>
             </Button>

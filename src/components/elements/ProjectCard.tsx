@@ -6,14 +6,14 @@ import { Badge } from '@/components/ui/Badge';
 import GradientBorder from '@/components/ui/GradientBorder';
 import GradientText from '@/components/typography/GradientText';
 
-type ProjectCardProps = {
+interface ProjectCardProps {
   id: string;
   title: string;
   type: string;
   href?: string;
   lightMockup: StaticImageData;
   darkMockup: StaticImageData;
-};
+}
 
 export default function ProjectCard({
   id,
@@ -24,7 +24,7 @@ export default function ProjectCard({
   darkMockup,
 }: ProjectCardProps) {
   const cardContent = (
-    <div className="group relative aspect-[35/22] overflow-hidden rounded-5 bg-background xs:rounded-6 md:rounded-5 xl:rounded-6">
+    <div className="group relative aspect-[35/22] overflow-hidden rounded-4 bg-background xs:rounded-5 md:rounded-4 xl:rounded-5">
       <Image
         src={lightMockup}
         alt={`${title} mockup`}
@@ -52,7 +52,7 @@ export default function ProjectCard({
   );
 
   return (
-    <GradientBorder borderRadius="transition-shadow duration-200 rounded-[21px] xs:rounded-[25px] md:rounded-[21px] xl:rounded-[25px] shadow-card-light dark:shadow-card-dark md:odd:translate-y-9 hover:shadow-card-md-light dark:hover:shadow-card-md-dark">
+    <GradientBorder borderRadius="transition-shadow duration-200 rounded-[15px] xs:rounded-[21px] md:rounded-[15px] xl:rounded-[21px] shadow-card-light dark:shadow-card-dark md:odd:translate-y-9 hover:shadow-card-md-light dark:hover:shadow-card-md-dark">
       {href ? (
         href.startsWith('/') ? (
           <Link href={href}>{cardContent}</Link>
