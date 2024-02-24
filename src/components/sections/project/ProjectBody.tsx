@@ -44,16 +44,16 @@ export default function ProjectBody({ body }: ProjectBodyProps) {
               <BlockChildren blockChildren={block.children} />
             </p>
           );
-        } else if (block.style === 'h1') {
+        } else if (block.style === 'h2') {
           return (
-            <h1
+            <h2
               className="-mb-2 mt-12 font-display text-7 font-bold first:mt-0 xl:text-9"
               key={i}
             >
               <GradientText>
                 <BlockChildren blockChildren={block.children} />
               </GradientText>
-            </h1>
+            </h2>
           );
         } else if (block.style === 'img') {
           return (

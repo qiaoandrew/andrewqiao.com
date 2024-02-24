@@ -1,15 +1,15 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { cn } from "@/lib/utils";
-import { NavigationMenuLink } from "@/components/ui/NavigationMenu";
+import { cn } from '@/lib/utils';
+import { NavigationMenuLink } from '@/components/ui/NavigationMenu';
 
-type NavigationMenuListItemCardProps = {
+interface NavigationMenuListItemCardProps {
   isRoute?: boolean;
   href: string;
   title: string;
   children: React.ReactNode;
   className?: string;
-};
+}
 
 export default function NavigationMenuListItemCard({
   isRoute = false,
@@ -19,8 +19,8 @@ export default function NavigationMenuListItemCard({
   children,
 }: NavigationMenuListItemCardProps) {
   const navigationMenuListItemCardStyle = cn(
-    "flex h-full w-full select-none flex-col justify-end rounded-3 bg-accent p-5 no-underline outline-none",
-    className,
+    'flex h-full w-full select-none flex-col justify-end rounded-3 bg-accent p-5 no-underline outline-none',
+    className
   );
 
   const navigationMenuListItemCardText = (

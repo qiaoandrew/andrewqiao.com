@@ -4,40 +4,13 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
+import { HEADER_MENU } from '@/constants/header';
 import {
   Popover,
   PopoverClose,
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/Popover';
-
-const LINKS = [
-  {
-    id: 'home',
-    title: 'Home',
-    href: '/#',
-  },
-  {
-    id: 'projects',
-    title: 'Projects',
-    href: '/#projects',
-  },
-  {
-    id: 'experiences',
-    title: 'Experiences',
-    href: '/#experiences',
-  },
-  {
-    id: 'about',
-    title: 'About',
-    href: '/#about',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
-    href: '/#contact',
-  },
-];
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +42,7 @@ export default function MobileMenu() {
         sideOffset={36}
         className="grid w-[calc(100vw-40px)] rounded-4 bg-background/90 py-3 backdrop-blur-sm md:hidden"
       >
-        {LINKS.map(({ id, title, href }) => (
+        {HEADER_MENU.map(({ id, title, href }) => (
           <PopoverClose asChild key={id}>
             <Link
               href={href}

@@ -17,7 +17,7 @@ export type BlockChild = {
 
 export type Block =
   | {
-      style: 'h1' | 'p';
+      style: 'h2' | 'p';
       children: BlockChild[];
     }
   | {

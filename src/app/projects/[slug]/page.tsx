@@ -29,11 +29,11 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       />
       <div className="flex flex-col gap-16 md:flex-row md:gap-12 xl:gap-18">
         <ProjectDetails
-          technologies={PROJECTS[slug as keyof typeof PROJECTS].technologies}
-          skills={PROJECTS[slug as keyof typeof PROJECTS].skills}
-          buttons={PROJECTS[slug as keyof typeof PROJECTS].buttons}
+          technologies={PROJECTS[slug].technologies}
+          skills={PROJECTS[slug].skills}
+          buttons={PROJECTS[slug].buttons}
         />
-        <ProjectBody body={PROJECTS[slug as keyof typeof PROJECTS].body} />
+        <ProjectBody body={PROJECTS[slug].body} />
       </div>
     </>
   );

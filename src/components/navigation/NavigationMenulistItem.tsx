@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { NavigationMenuLink } from '@/components/ui/NavigationMenu';
 
-type NavigationMenuListItemProps = {
+interface NavigationMenuListItemProps {
   isRoute?: boolean;
   href: string;
   title: string;

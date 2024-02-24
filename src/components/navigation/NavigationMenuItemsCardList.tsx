@@ -1,6 +1,6 @@
-type NavigationMenuItemsCardListProps = {
+interface NavigationMenuItemsCardListProps {
   children: React.ReactNode;
-};
+}
 
 export default function NavigationMenuItemsCardList({
   children,
