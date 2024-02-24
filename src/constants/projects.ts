@@ -5,7 +5,7 @@ import pethsapp2LightMockup from '../../public/img/mockups/pethsapp-2-light.png'
 import pethsapp2DarkMockup from '../../public/img/mockups/pethsapp-2-dark.png';
 import pethsapp3LightMockup from '../../public/img/mockups/pethsapp-3-light.png';
 import pethsapp3DarkMockup from '../../public/img/mockups/pethsapp-3-dark.png';
-import type { Project } from '@/types/types';
+import { type Project } from '@/types/types';
 
 export const PROJECTS: Record<string, Project> = {
   pethsapp: {

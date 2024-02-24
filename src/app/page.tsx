@@ -5,7 +5,7 @@ import About from '@/components/sections/home/About';
 import Contact from '@/components/sections/home/Contact';
 import Footer from '@/components/navigation/Footer';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Hero />

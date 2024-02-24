@@ -21,13 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          'bg-background font-sans',
-          inter.variable,
-          interDisplay.variable
-        )}
-      >
+      <body className={cn('font-sans', inter.variable, interDisplay.variable)}>
         <Providers>
           <Header />
           <main>{children}</main>

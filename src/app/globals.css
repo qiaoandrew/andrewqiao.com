@@ -2,55 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply scroll-smooth !important;
+:root {
+  --background: 0 0% 97%;
+  --foreground: 228 26% 4%;
+  --primary: 0 0% 94%;
+  --primary-foreground: 240 5% 13%;
+  --secondary-foreground: 0 0% 17%;
+  --muted-foreground: 240 4% 46%;
+  --accent: 0 0% 91%;
+  --border: 0 0% 91%;
+  --ring: 0 0% 75%;
+  --destructive: 3 92% 95%;
+  --destructive-foreground: 0 67% 42%;
+  --destructive-border: 359 74% 82%;
+  --warning: 53 100% 93%;
+  --warning-foreground: 43 81% 27%;
+  --warning-border: 42 51% 67%;
+  --success: 139 48% 91%;
+  --success-foreground: 153 67% 20%;
+  --success-border: 146 38% 69%;
+}
+
+.dark {
+  --background: 234 25% 4%;
+  --foreground: 0 0% 97%;
+  --primary: 0 0% 6%;
+  --primary-foreground: 0 0% 77%;
+  --secondary-foreground: 215 4% 62%;
+  --muted-foreground: 215 4% 43%;
+  --accent: 240 1% 12%;
+  --border: 240 1% 12%;
+  --ring: 240 5% 27%;
+  --destructive: 4 72% 33%;
+  --destructive-foreground: 3 92% 95%;
+  --destructive-border: 359 42% 55%;
+  --warning: 40 72% 33%;
+  --warning-foreground: 53 100% 93%;
+  --warning-border: 42 43% 55%;
+  --success: 153 67% 20%;
+  --success-foreground: 139 48% 91%;
+  --success-border: 151 49% 34%;
 }
 
 @layer base {
-  :root {
-    --background: 0 0% 97%;
-    --foreground: 228 26% 4%;
-    --primary: 0 0% 94%;
-    --primary-foreground: 240 5% 13%;
-    --secondary-foreground: 0 0% 17%;
-    --muted-foreground: 240 4% 46%;
-    --accent: 0 0% 91%;
-    --border: 0 0% 91%;
-    --ring: 0 0% 75%;
-    --destructive: 3 92% 95%;
-    --destructive-foreground: 0 67% 42%;
-    --destructive-border: 359 74% 82%;
-    --warning: 53 100% 93%;
-    --warning-foreground: 43 81% 27%;
-    --warning-border: 42 51% 67%;
-    --success: 139 48% 91%;
-    --success-foreground: 153 67% 20%;
-    --success-border: 146 38% 69%;
-  }
-
-  .dark {
-    --background: 234 25% 4%;
-    --foreground: 0 0% 97%;
-    --primary: 0 0% 6%;
-    --primary-foreground: 0 0% 77%;
-    --secondary-foreground: 215 4% 62%;
-    --muted-foreground: 215 4% 43%;
-    --accent: 240 1% 12%;
-    --border: 240 1% 12%;
-    --ring: 240 5% 27%;
-    --destructive: 4 72% 33%;
-    --destructive-foreground: 3 92% 95%;
-    --destructive-border: 359 42% 55%;
-    --warning: 40 72% 33%;
-    --warning-foreground: 53 100% 93%;
-    --warning-border: 42 43% 55%;
-    --success: 153 67% 20%;
-    --success-foreground: 139 48% 91%;
-    --success-border: 151 49% 34%;
-  }
-
   * {
-    @apply box-border;
+    @apply box-border border-border;
+  }
+
+  html {
+    @apply scroll-smooth !important;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
