@@ -1,8 +1,8 @@
-type ContactFormEmailTemplateProps = {
+interface ContactFormEmailTemplateProps {
   name: string;
   email: string;
   message: string;
-};
+}
 
 export default function ContactFormEmailTemplate({
   name,

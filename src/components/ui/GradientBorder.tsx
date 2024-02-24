@@ -1,9 +1,9 @@
 import { cn } from '@/lib/utils';
 
-type GradientBorderProps = {
+interface GradientBorderProps {
   borderRadius: string;
   children: React.ReactNode;
-};
+}
 
 export default function GradientBorder({
   borderRadius,

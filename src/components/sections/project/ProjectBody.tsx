@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
 import { cn } from '@/lib/utils';
-import type { Block, BlockChild } from '@/types/types';
+import { type Block, type BlockChild } from '@/types/types';
 import GradientText from '@/components/typography/GradientText';
 
-type ProjectBodyProps = {
+interface ProjectBodyProps {
   body: Block[];
-};
+}
 
 function BlockChildren({ blockChildren }: { blockChildren: BlockChild[] }) {
   return blockChildren.map((child, j) => {

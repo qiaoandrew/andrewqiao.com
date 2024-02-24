@@ -1,5 +1,5 @@
-import { StaticImageData } from 'next/image';
-import type { IconType } from 'react-icons';
+import { type StaticImageData } from 'next/image';
+import { type IconType } from 'react-icons';
 
 export type Button = {
   id: string;

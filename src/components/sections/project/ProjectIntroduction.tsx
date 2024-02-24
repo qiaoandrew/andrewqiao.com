@@ -2,13 +2,13 @@ import Image, { type StaticImageData } from 'next/image';
 
 import GradientText from '@/components/typography/GradientText';
 
-type ProjectIntroductionProps = {
+interface ProjectIntroductionProps {
   title: string;
   type: string;
   description: string;
   mockupLight: StaticImageData;
   mockupDark: StaticImageData;
-};
+}
 
 export default function ProjectIntroduction({
   title,
@@ -21,7 +21,7 @@ export default function ProjectIntroduction({
     <section className="mb-7 pt-21 sm:pt-24 md:mb-10 md:pt-32 xl:mb-16 2xl:pt-36">
       <div className="mb-8 flex justify-between md:mb-12 xl:mb-18">
         <div className="flex-shrink-0">
-          <h1 className="xl:text-16 mb-3 font-display text-10 font-bold xl:mb-4">
+          <h1 className="mb-3 font-display text-10 font-bold xl:mb-4 xl:text-16">
             <GradientText>{title}</GradientText>
           </h1>
           <p className="text-4 font-medium text-primary-foreground xl:text-5">

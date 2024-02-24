@@ -6,9 +6,9 @@ import ProjectDetails from '@/components/sections/project/ProjectDetails';
 import Footer from '@/components/navigation/Footer';
 import ProjectBody from '@/components/sections/project/ProjectBody';
 
-type ProjectPageProps = {
-  params: { slug: string };
-};
+interface ProjectPageProps {
+  params: { slug: keyof typeof PROJECTS };
+}
 
 export default function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = params;
@@ -17,8 +17,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
-  const { title, type, description, mockupLight, mockupDark } =
-    PROJECTS[slug as keyof typeof PROJECTS];
+  const { title, type, description, mockupLight, mockupDark } = PROJECTS[slug];
 
   return (
     <>

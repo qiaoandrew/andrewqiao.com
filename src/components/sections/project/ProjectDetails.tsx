@@ -3,11 +3,11 @@ import { Button } from '@/components/ui/Button';
 import GradientText from '@/components/typography/GradientText';
 import GradientBorder from '@/components/ui/GradientBorder';
 
-type ProjectDetailsProps = {
+interface ProjectDetailsProps {
   technologies: string[];
   skills: string[];
   buttons: ButtonType[];
-};
+}
 
 export default function ProjectDetails({
   technologies,

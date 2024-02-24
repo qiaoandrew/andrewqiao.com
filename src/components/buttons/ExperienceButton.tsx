@@ -1,13 +1,13 @@
-import type { LucideIcon } from 'lucide-react';
+import { type LucideIcon } from 'lucide-react';
 
 import { Button } from '@/components/ui/Button';
 import GradientBorder from '@/components/ui/GradientBorder';
 
-type ExperienceButtonProps = {
+interface ExperienceButtonProps {
   href: string;
   children: React.ReactNode;
   Icon: LucideIcon;
-};
+}
 
 export default function ExperienceButton({
   href,
