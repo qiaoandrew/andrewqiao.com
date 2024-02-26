@@ -7,12 +7,16 @@ export default function SocialButtons() {
   return (
     <div className="flex flex-wrap gap-3">
       {SOCIALS.map(({ id, title, href, icon }) => (
-        <GradientBorder borderRadius="rounded-2" key={id}>
+        <GradientBorder
+          borderRadius="rounded-[7px]"
+          className="size-[34px]"
+          key={id}
+        >
           <a
             href={href}
             target="_blank"
             rel="noreferrer noopener"
-            className={cn(buttonVariants({ size: 'icon-md' }), 'rounded-[7px]')}
+            className={cn(buttonVariants({ size: 'icon' }))}
           >
             {icon}
             <span className="sr-only">{title}</span>
