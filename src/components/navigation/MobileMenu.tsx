@@ -44,12 +44,22 @@ export default function MobileMenu() {
       >
         {HEADER_MENU.map(({ id, title, href }) => (
           <PopoverClose asChild key={id}>
-            <Link
-              href={href}
-              className="block py-1.5 text-center font-display text-4 font-medium"
-            >
-              {title}
-            </Link>
+            {href.startsWith('/#') ? (
+              <Link
+                href={href}
+                className="block py-1.5 text-center font-display text-4 font-medium"
+              >
+                {title}
+              </Link>
+            ) : (
+              <a
+                href={href}
+                target="_blank"
+                className="block py-1.5 text-center font-display text-4 font-medium"
+              >
+                {title}
+              </a>
+            )}
           </PopoverClose>
         ))}
       </PopoverContent>
