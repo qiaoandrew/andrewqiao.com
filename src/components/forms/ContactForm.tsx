@@ -97,12 +97,11 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <GradientBorder borderRadius="rounded-[11px] xs:inline-flex xs:rounded-[13px]">
+        <GradientBorder borderRadius="rounded-[11px] xs:rounded-[13px] xs:inline-flex">
           <Button
             type="submit"
-            size="sm"
             disabled={form.formState.isSubmitting}
-            className="w-full disabled:opacity-100 xs:w-[110px] xs:rounded-3 xs:py-3 xs:text-4.5"
+            className="w-full disabled:opacity-100 xs:rounded-3 xs:px-6 xs:py-3 xs:text-4.5"
           >
             <span
               className={cn(form.formState.isSubmitting && 'text-transparent')}

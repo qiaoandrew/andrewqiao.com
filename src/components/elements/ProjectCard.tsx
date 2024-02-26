@@ -29,14 +29,14 @@ export default function ProjectCard({
         src={lightMockup}
         alt={`${title} mockup`}
         className={cn(
-          'absolute inset-0 transition-transform duration-200 md:group-hover:scale-105 dark:hidden'
+          'absolute inset-0 transition-transform duration-200 xl:group-hover:scale-105 dark:hidden'
         )}
       />
       <Image
         src={darkMockup}
         alt={`${title} mockup`}
         className={cn(
-          'absolute inset-0 hidden transition-transform duration-200 md:group-hover:scale-105 dark:block'
+          'absolute inset-0 hidden transition-transform duration-200 xl:group-hover:scale-105 dark:block'
         )}
       />
       <div className="absolute inset-0 bg-light-card-bottom-gradient dark:bg-dark-card-bottom-gradient" />
@@ -75,7 +75,7 @@ export default function ProjectCard({
   return (
     <GradientBorder
       borderRadius={cn(
-        'transition-shadow duration-200 rounded-[15px] shadow-card-light dark:shadow-card-dark hover:shadow-card-md-light dark:hover:shadow-card-md-dark',
+        'transition-shadow duration-200 rounded-[15px] shadow-card-light dark:shadow-card-dark xl:hover:shadow-card-md-light xl:dark:hover:shadow-card-md-dark',
         'xs:rounded-[21px]',
         'md:rounded-[15px] md:odd:translate-y-9',
         'xl:rounded-[21px]'
@@ -90,7 +90,7 @@ export default function ProjectCard({
           </a>
         )
       ) : (
-        <div className="md:hover:cursor-wait">{cardContent}</div>
+        <div className="xl:hover:cursor-wait">{cardContent}</div>
       )}
     </GradientBorder>
   );

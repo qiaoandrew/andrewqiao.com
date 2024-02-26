@@ -1,4 +1,4 @@
-import type { Button as ButtonType } from '@/types/types';
+import { type Button as ButtonType } from '@/types/types';
 import { Button } from '@/components/ui/Button';
 import GradientText from '@/components/typography/GradientText';
 import GradientBorder from '@/components/ui/GradientBorder';
@@ -44,10 +44,10 @@ export default function ProjectDetails({
           ))}
         </p>
       </div>
-      <div className="grid gap-4">
+      <div className="grid gap-4 xs:grid-cols-2 md:grid-cols-1">
         {buttons.map(({ id, title, href, Icon }) => (
-          <GradientBorder borderRadius="rounded-[13px]" key={id}>
-            <Button asChild className="w-full py-2.5">
+          <GradientBorder borderRadius="rounded-[11px]" key={id}>
+            <Button asChild className="w-full">
               <a href={href} target="_blank" rel="noreferrer noopener">
                 {title}
                 <Icon className="absolute right-4 top-1/2 w-5 -translate-y-1/2 text-primary-foreground" />

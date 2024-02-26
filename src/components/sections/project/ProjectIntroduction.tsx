@@ -18,10 +18,10 @@ export default function ProjectIntroduction({
   mockupDark,
 }: ProjectIntroductionProps) {
   return (
-    <section className="mb-7 pt-21 sm:pt-24 md:mb-10 md:pt-32 xl:mb-16 2xl:pt-36">
-      <div className="mb-8 flex justify-between md:mb-12 xl:mb-18">
+    <section className="mb-7 pt-21 sm:pt-24 md:mb-10 md:pt-32 xl:mb-16">
+      <div className="mb-8 flex justify-between md:mb-12 xl:mb-16">
         <div className="flex-shrink-0">
-          <h1 className="mb-3 font-display text-10 font-bold xl:mb-4 xl:text-16">
+          <h1 className="mb-3 font-display text-10 font-bold xl:text-16">
             <GradientText>{title}</GradientText>
           </h1>
           <p className="text-4 font-medium text-primary-foreground xl:text-5">
@@ -36,12 +36,12 @@ export default function ProjectIntroduction({
         <Image
           src={mockupLight}
           alt={title}
-          className="h-full object-cover transition-transform duration-200 md:group-hover:scale-105 dark:hidden"
+          className="h-full object-cover transition-transform duration-200 xl:group-hover:scale-105 dark:hidden"
         />
         <Image
           src={mockupDark}
           alt={title}
-          className="hidden h-full object-cover transition-transform duration-200 md:group-hover:scale-105 dark:block"
+          className="hidden h-full object-cover transition-transform duration-200 xl:group-hover:scale-105 dark:block"
         />
       </div>
       <p className="max-w-[400px] font-display text-4.5 font-medium text-foreground md:hidden">

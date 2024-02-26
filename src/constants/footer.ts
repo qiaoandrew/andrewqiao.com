@@ -35,6 +35,11 @@ export const FOOTER_MENU = [
     title: 'Projects',
     items: [
       {
+        id: 'pethsapp',
+        title: 'Pethsapp',
+        href: '/projects/pethsapp',
+      },
+      {
         id: 'remax',
         title: 'RE/MAX',
         href: 'https://www.preconstruction.app/',
@@ -42,11 +47,6 @@ export const FOOTER_MENU = [
       {
         id: 'quadratic-ui',
         title: 'quadratic/ui',
-      },
-      {
-        id: 'pethsapp',
-        title: 'Pethsapp',
-        href: '/projects/pethsapp',
       },
       {
         id: 'uwdsc',

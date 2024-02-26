@@ -17,7 +17,7 @@ export default function ExperienceButton({
 }: ExperienceButtonProps) {
   return (
     <GradientBorder borderRadius="rounded-[11px]">
-      <Button size="sm" asChild className="w-full xs:gap-2.5 xs:pl-3">
+      <Button asChild className="w-full xs:gap-2.5 xs:pl-3">
         <a href={href} target="_blank" rel="noreferrer noopener">
           <Icon
             size={20}

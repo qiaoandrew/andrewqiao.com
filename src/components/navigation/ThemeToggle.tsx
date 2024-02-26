@@ -3,6 +3,7 @@
 import { useTheme } from 'next-themes';
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 
 export default function ThemeToggle() {
@@ -21,7 +22,10 @@ export default function ThemeToggle() {
       variant="ghost"
       size="icon-lg"
       onClick={changeTheme}
-      className="bg-transparent shadow-none md:hover:bg-transparent md:hover:shadow-none dark:bg-transparent dark:shadow-none md:dark:hover:bg-transparent md:dark:hover:shadow-none"
+      className={cn(
+        'bg-transparent shadow-none xl:hover:bg-transparent xl:hover:shadow-none',
+        'dark:bg-transparent dark:shadow-none xl:dark:hover:bg-transparent xl:dark:hover:shadow-none',
+      )}
     >
       <SunIcon className="h-5 w-5 text-primary-foreground dark:hidden" />
       <MoonIcon className="hidden h-5 w-5 text-primary-foreground dark:block" />

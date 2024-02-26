@@ -11,7 +11,7 @@ export default function Footer() {
         </h3>
         <a
           href="mailto:andrew.qiao@uwaterloo.ca"
-          className="font-display text-4 font-medium text-secondary-foreground"
+          className="mb-4 block font-display text-4 font-medium text-secondary-foreground"
         >
           andrew.qiao@uwaterloo.ca
         </a>

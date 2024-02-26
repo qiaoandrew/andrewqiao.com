@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { PROJECTS } from '@/constants/projects';
 import ProjectIntroduction from '@/components/sections/project/ProjectIntroduction';
 import ProjectDetails from '@/components/sections/project/ProjectDetails';
-import ProjectBody from '@/components/sections/project/ProjectBody';
+import PortableText from '@/components/sections/portable-text/PortableText';
 
 interface ProjectPageProps {
   params: { slug: string };
@@ -12,9 +12,7 @@ interface ProjectPageProps {
 export default function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = params;
 
-  if (!(slug in PROJECTS)) {
-    notFound();
-  }
+  if (!(slug in PROJECTS)) notFound();
 
   const { title, type, description, mockupLight, mockupDark } = PROJECTS[slug];
 
@@ -27,13 +25,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         mockupLight={mockupLight}
         mockupDark={mockupDark}
       />
-      <div className="flex flex-col gap-16 md:flex-row md:gap-12 xl:gap-18">
+      <div className="flex flex-col gap-16 md:flex-row md:gap-12 xl:gap-20">
         <ProjectDetails
           technologies={PROJECTS[slug].technologies}
           skills={PROJECTS[slug].skills}
           buttons={PROJECTS[slug].buttons}
         />
-        <ProjectBody body={PROJECTS[slug].body} />
+        <PortableText body={PROJECTS[slug].body} />
       </div>
     </>
   );

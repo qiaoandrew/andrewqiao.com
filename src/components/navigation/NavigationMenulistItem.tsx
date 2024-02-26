@@ -10,7 +10,7 @@ interface NavigationMenuListItemProps {
   disabled?: boolean;
   children: React.ReactNode;
   className?: string;
-};
+}
 
 export default function NavigationMenuListItem({
   isRoute = false,
@@ -21,7 +21,7 @@ export default function NavigationMenuListItem({
   children,
 }: NavigationMenuListItemProps) {
   const navigationMenuListItemStyle = cn(
-    'block select-none space-y-1 rounded-2 px-3 py-2.5 no-underline outline-none transition-colors duration-200 md:hover:bg-accent focus:bg-accent',
+    'block select-none space-y-1 rounded-2 px-3 py-2.5 no-underline outline-none transition-colors duration-200 xl:hover:bg-accent xl:focus:bg-accent',
     className
   );
 

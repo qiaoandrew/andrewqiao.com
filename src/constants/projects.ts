@@ -1,41 +1,44 @@
 import { SiAppstore } from 'react-icons/si';
 import { FaGoogle } from 'react-icons/fa';
 
-import remaxMockup from '../../public/img/mockups/remax-1.png';
-import quadraticUILightMockup from '../../public/img/mockups/quadratic-ui-1-light.png';
-import quadraticUIDarkMockup from '../../public/img/mockups/quadratic-ui-1-dark.png';
-import pethsappLightMockup from '../../public/img/mockups/pethsapp-1-light.png';
-import pethsappDarkMockup from '../../public/img/mockups/pethsapp-1-dark.png';
-import uwdscMockup from '../../public/img/mockups/uwdsc-1.png';
-import pethsapp2LightMockup from '../../public/img/mockups/pethsapp-2-light.png';
-import pethsapp2DarkMockup from '../../public/img/mockups/pethsapp-2-dark.png';
-import pethsapp3LightMockup from '../../public/img/mockups/pethsapp-3-light.png';
-import pethsapp3DarkMockup from '../../public/img/mockups/pethsapp-3-dark.png';
 import { type Project } from '@/types/types';
 
+import pethsappLightCardMockup from '../../public/img/mockups/card/pethsapp-light.png';
+import pethsappDarkCardMockup from '../../public/img/mockups/card/pethsapp-dark.png';
+import remaxCardMockup from '../../public/img/mockups/card/remax.png';
+import quadraticUICardLightMockup from '../../public/img/mockups/card/quadratic-ui-light.png';
+import quadraticUICardDarkMockup from '../../public/img/mockups/card/quadratic-ui-dark.png';
+import uwdscMockup from '../../public/img/mockups/card/uwdsc.png';
+
+import pethsappLightHeroMockup from '../../public/img/mockups/hero/pethsapp-light.png';
+import pethsappDarkHeroMockup from '../../public/img/mockups/hero/pethsapp-dark.png';
+
+import pethsappLight1Mockup from '../../public/img/mockups/content/pethsapp-1-light.png';
+import pethsappDark1Mockup from '../../public/img/mockups/content/pethsapp-1-dark.png';
+
 export const PROJECT_CARDS = [
-  {
-    id: 'remax',
-    title: 'RE/MAX',
-    href: 'https://www.preconstruction.app',
-    type: 'Web App',
-    lightMockup: remaxMockup,
-    darkMockup: remaxMockup,
-  },
-  {
-    id: 'quadratic-ui',
-    title: 'quadratic/ui',
-    type: 'Coming soon...',
-    lightMockup: quadraticUILightMockup,
-    darkMockup: quadraticUIDarkMockup,
-  },
   {
     id: 'pethsapp',
     title: 'Pethsapp',
     href: '/projects/pethsapp',
     type: 'Mobile App',
-    lightMockup: pethsappLightMockup,
-    darkMockup: pethsappDarkMockup,
+    lightMockup: pethsappLightCardMockup,
+    darkMockup: pethsappDarkCardMockup,
+  },
+  {
+    id: 'remax',
+    title: 'RE/MAX',
+    href: 'https://www.preconstruction.app',
+    type: 'Web App',
+    lightMockup: remaxCardMockup,
+    darkMockup: remaxCardMockup,
+  },
+  {
+    id: 'quadratic-ui',
+    title: 'quadratic/ui',
+    type: 'Coming soon...',
+    lightMockup: quadraticUICardLightMockup,
+    darkMockup: quadraticUICardDarkMockup,
   },
   {
     id: 'uwdsc',
@@ -54,8 +57,8 @@ export const PROJECTS: Record<string, Project> = {
     type: 'Mobile Development + Design',
     description:
       'Engaging the school community during the pandemic through a mobile application.',
-    mockupLight: pethsapp2LightMockup,
-    mockupDark: pethsapp2DarkMockup,
+    mockupLight: pethsappLightHeroMockup,
+    mockupDark: pethsappDarkHeroMockup,
     technologies: [
       'React Native',
       'Expo',
@@ -86,6 +89,7 @@ export const PROJECTS: Record<string, Project> = {
           {
             style: 'span',
             marks: [],
+            // text: '[0]: Going Mobile',
             text: 'About',
           },
         ],
@@ -133,9 +137,59 @@ export const PROJECTS: Record<string, Project> = {
       {
         style: 'img',
         alt: 'pethsapp mockup 1',
-        srcLight: pethsapp3LightMockup,
-        srcDark: pethsapp3DarkMockup,
+        srcLight: pethsappLight1Mockup,
+        srcDark: pethsappDark1Mockup,
       },
+      // {
+      //   style: 'h2',
+      //   children: [
+      //     {
+      //       style: 'span',
+      //       marks: [],
+      //       text: '[1]: Pandemic Problems',
+      //     },
+      //   ],
+      // },
+      // {
+      //   style: 'p',
+      //   children: [
+      //     {
+      //       style: 'span',
+      //       marks: [],
+      //       text: 'In 2020, students were introduced to an obstacle like no other. With the start of the COVID-19 pandemic, students went from interactive, in-person classes to a completely online experience.',
+      //     },
+      //   ],
+      // },
+      // {
+      //   style: 'p',
+      //   children: [
+      //     {
+      //       style: 'span',
+      //       marks: [],
+      //       text: 'With this shift, I started noticing students becoming disconnected from the school community. Additionally, with the absence of announcements, there was no longer a daily reminder about club events, greatly reducing social connection.',
+      //     },
+      //   ],
+      // },
+      // {
+      //   style: 'p',
+      //   children: [
+      //     {
+      //       style: 'span',
+      //       marks: [],
+      //       text: "I strongly believe that school should be a very social environment. It's a one-of-a-kind place where students can connect based on their shared interests and passions.",
+      //     },
+      //   ],
+      // },
+      // {
+      //   style: 'h2',
+      //   children: [
+      //     {
+      //       style: 'span',
+      //       marks: [],
+      //       text: '[2]: Technology for Reconnection',
+      //     },
+      //   ],
+      // },
     ],
   },
 };

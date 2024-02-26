@@ -8,10 +8,7 @@ export default function FooterMenu() {
     <nav className="flex justify-between gap-16">
       {FOOTER_MENU.map((group, i) => (
         <div
-          className={cn(
-            'flex flex-col gap-0.5',
-            i === 0 ? '' : 'flex-shrink-0'
-          )}
+          className={cn('flex flex-col gap-1.5', i !== 0 && 'flex-shrink-0')}
           key={group.id}
         >
           <h4 className="text-white text-3.5 font-bold 3xs:text-4">
@@ -21,7 +18,7 @@ export default function FooterMenu() {
             const className = cn(
               'font-display text-3.5 font-medium transition-colors duration-200 3xs:text-4',
               href
-                ? 'text-secondary-foreground md:hover:text-primary-foreground'
+                ? 'text-secondary-foreground xl:hover:text-primary-foreground'
                 : 'text-muted-foreground'
             );
 
