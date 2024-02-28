@@ -24,4 +24,9 @@ export const HEADER_MENU = [
     title: 'Contact',
     href: '/#contact',
   },
+  {
+    id: 'resume',
+    title: 'Resume',
+    href: '/resume.pdf',
+  },
 ];
