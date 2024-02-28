@@ -12,7 +12,7 @@ export default function PortableText({ body }: PortableTextProps) {
   return (
     <div>
       {body.map((block, i) => {
-        if (block.style === 'p') {
+        if (block.style === 'normal') {
           return (
             <p
               className="mt-4 text-4 text-primary-foreground xl:mt-5 xl:text-4.5"
@@ -34,7 +34,10 @@ export default function PortableText({ body }: PortableTextProps) {
           );
         } else if (block.style === 'img') {
           return (
-            <div className="group my-8 border border-ring xl:my-12" key={i}>
+            <div
+              className="group my-8 overflow-hidden border border-ring xl:my-12"
+              key={i}
+            >
               <Image
                 src={block.srcLight}
                 alt={block.alt}

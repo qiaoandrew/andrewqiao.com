@@ -9,7 +9,7 @@ export type Button = {
 };
 
 export type BlockChild = {
-  style: 'span' | 'a';
+  type: 'span' | 'a';
   href?: string;
   marks: string[];
   text: string;
@@ -17,7 +17,7 @@ export type BlockChild = {
 
 export type Block =
   | {
-      style: 'h2' | 'p';
+      style: 'h2' | 'h3' | 'normal';
       children: BlockChild[];
     }
   | {

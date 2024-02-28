@@ -15,6 +15,8 @@ import pethsappDarkHeroMockup from '../../public/img/mockups/hero/pethsapp-dark.
 
 import pethsappLight1Mockup from '../../public/img/mockups/content/pethsapp-1-light.png';
 import pethsappDark1Mockup from '../../public/img/mockups/content/pethsapp-1-dark.png';
+import pethsappLight2Mockup from '../../public/img/mockups/content/pethsapp-2-light.png';
+import pethsappDark2Mockup from '../../public/img/mockups/content/pethsapp-2-dark.png';
 
 export const PROJECT_CARDS = [
   {
@@ -87,48 +89,47 @@ export const PROJECTS: Record<string, Project> = {
         style: 'h2',
         children: [
           {
-            style: 'span',
+            type: 'span',
             marks: [],
-            // text: '[0]: Going Mobile',
-            text: 'About',
+            text: '[0]: Going Mobile',
           },
         ],
       },
       {
-        style: 'p',
+        style: 'normal',
         children: [
           {
-            style: 'span',
+            type: 'span',
             marks: [],
             text: 'Pethsapp is the official mobile app of my former high school, Pierre Elliott Trudeau High School. It has ',
           },
           {
-            style: 'span',
+            type: 'span',
             marks: ['strong'],
             text: '1200+ users',
           },
           {
-            style: 'span',
+            type: 'span',
             marks: [],
             text: ', including students, parents, and teachers in the school community. Upon release, it peaked at ',
           },
           {
-            style: 'span',
+            type: 'span',
             marks: ['strong'],
             text: 'Top 15 on the Apple App Store Education Chart',
           },
           {
-            style: 'span',
+            type: 'span',
             marks: [],
             text: '.',
           },
         ],
       },
       {
-        style: 'p',
+        style: 'normal',
         children: [
           {
-            style: 'span',
+            type: 'span',
             marks: [],
             text: "It serves as the school's mobile hub, helping students stay updated on school events, announcements, and new opportunities.",
           },
@@ -136,60 +137,147 @@ export const PROJECTS: Record<string, Project> = {
       },
       {
         style: 'img',
-        alt: 'pethsapp mockup 1',
+        alt: 'Pethsapp home, community, and resources screens',
         srcLight: pethsappLight1Mockup,
         srcDark: pethsappDark1Mockup,
       },
-      // {
-      //   style: 'h2',
-      //   children: [
-      //     {
-      //       style: 'span',
-      //       marks: [],
-      //       text: '[1]: Pandemic Problems',
-      //     },
-      //   ],
-      // },
-      // {
-      //   style: 'p',
-      //   children: [
-      //     {
-      //       style: 'span',
-      //       marks: [],
-      //       text: 'In 2020, students were introduced to an obstacle like no other. With the start of the COVID-19 pandemic, students went from interactive, in-person classes to a completely online experience.',
-      //     },
-      //   ],
-      // },
-      // {
-      //   style: 'p',
-      //   children: [
-      //     {
-      //       style: 'span',
-      //       marks: [],
-      //       text: 'With this shift, I started noticing students becoming disconnected from the school community. Additionally, with the absence of announcements, there was no longer a daily reminder about club events, greatly reducing social connection.',
-      //     },
-      //   ],
-      // },
-      // {
-      //   style: 'p',
-      //   children: [
-      //     {
-      //       style: 'span',
-      //       marks: [],
-      //       text: "I strongly believe that school should be a very social environment. It's a one-of-a-kind place where students can connect based on their shared interests and passions.",
-      //     },
-      //   ],
-      // },
-      // {
-      //   style: 'h2',
-      //   children: [
-      //     {
-      //       style: 'span',
-      //       marks: [],
-      //       text: '[2]: Technology for Reconnection',
-      //     },
-      //   ],
-      // },
+      {
+        style: 'h2',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: '[1]: Pandemic Problems',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: 'In 2020, students were introduced to an obstacle like no other. With the start of the COVID-19 pandemic, students went from interactive, in-person classes to a completely online experience.',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: 'With this shift, I started noticing students becoming disconnected from the school community. Additionally, with the absence of announcements, there was no longer a daily reminder about club events, greatly reducing social connection.',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: "I strongly believe that school should be a very social environment. It's a one-of-a-kind place where students can connect based on their shared interests and passions.",
+          },
+        ],
+      },
+      {
+        style: 'h2',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: '[2]: Technology for Reconnection',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: 'As Technology Chairperson of the student council, I worked with other members to envision an app that would serve as a scholastic hub for students, teachers, and parents alike, thus reconnecting the disconnected.',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: 'One of our most used features is the daily announcements and events list. We took inspiration from various news apps, highlighting the key points of every day in a list of cards displayed in the format of a carousel.',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: 'Our content lives on ',
+          },
+          {
+            type: 'a',
+            marks: ['underline'],
+            href: 'https://www.sanity.io/',
+            text: 'Sanity.io',
+          },
+          {
+            type: 'span',
+            marks: [],
+            text: ", an amazing headless CMS that I can't say enough good things about. It provides us with a super simple UI to update our content, as well as ultra-fast data-fetching times. I'd highly recommend checking it out and using it for your projects!",
+          },
+        ],
+      },
+      {
+        style: 'img',
+        alt: 'Pethsapp announcements and news screens',
+        srcLight: pethsappLight2Mockup,
+        srcDark: pethsappDark2Mockup,
+      },
+      {
+        style: 'h2',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: '[3]: Moving Forwards',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: 'Although my time in high school did come to an end in 2022 when I started at the University of Waterloo, Pethsapp is still a project that I continue to work on.',
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: "During the Summer of 2023, I re-invisioned the mobile app and mentored two student council members in developing the new release (the one that's available right now!)",
+          },
+        ],
+      },
+      {
+        style: 'normal',
+        children: [
+          {
+            type: 'span',
+            marks: [],
+            text: "Pethsapp has most definitely been an extremely impactful project and I'm super excited to continue building a better mobile experience for the school community. We're always designing, developing, and shipping new features that we think will positively impact how students, teachers, and parents interact with our app.",
+          },
+        ],
+      },
     ],
   },
 };
