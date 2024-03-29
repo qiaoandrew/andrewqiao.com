@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   description: 'I build what the world needs tomorrow, today.',
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn('font-sans', inter.variable, interDisplay.variable)}>

@@ -32,18 +32,18 @@ export default function ContactForm() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const response = await fetch('/api/contact', {
+      await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
       });
 
       form.reset();
+
       toast.success('Message sent successfully!');
     } catch (error) {
       console.error(error);
+
       toast.error('Something went wrong. Please try again later.');
     }
   };

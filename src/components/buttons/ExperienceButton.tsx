@@ -1,8 +1,8 @@
 import { type LucideIcon } from 'lucide-react';
 
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import GradientBorder from '@/components/ui/GradientBorder';
-import { cn } from '@/lib/utils';
 
 interface ExperienceButtonProps {
   href: string;

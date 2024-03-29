@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import { FOOTER_MENU } from '@/constants/footer';
 import { cn } from '@/lib/utils';
+import { FOOTER_MENU } from '@/constants/footer';
 
 export default function FooterMenu() {
   return (
