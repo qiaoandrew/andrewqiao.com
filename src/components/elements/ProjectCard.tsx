@@ -75,9 +75,9 @@ export default function ProjectCard({
   return (
     <GradientBorder
       borderRadius={cn(
-        'transition-shadow duration-200 rounded-[15px] shadow-card-light dark:shadow-card-dark xl:hover:shadow-card-md-light xl:dark:hover:shadow-card-md-dark',
+        'transition-shadow duration-200 rounded-[17px] shadow-card-light dark:shadow-card-dark xl:hover:shadow-card-md-light xl:dark:hover:shadow-card-md-dark',
         'xs:rounded-[21px]',
-        'md:rounded-[15px] md:odd:translate-y-9',
+        'md:rounded-[17px] md:odd:translate-y-9',
         'xl:rounded-[21px]'
       )}
     >
