@@ -1,6 +1,7 @@
 import { BookOpenIcon, MicroscopeIcon } from 'lucide-react';
 
 import ExperienceButton from '@/components/buttons/ExperienceButton';
+import snowflakeLogo from '../../public/img/logos/snowflake-logo.png';
 import ibmLogo from '../../public/img/logos/ibm-logo.png';
 import uhnLogo from '../../public/img/logos/uhn-logo.png';
 import tdLogo from '../../public/img/logos/td-logo.png';
@@ -8,12 +9,26 @@ import uoftLogo from '../../public/img/logos/uoft-logo.png';
 
 export const EXPERIENCES = [
   {
+    id: 'snowflake',
+    company: 'Snowflake',
+    role: 'Software Engineer Intern',
+    date: 'Apr 2024 - Present',
+    location: 'Bellevue, WA',
+    points: ['Recently started this exciting role on an exciting team!'],
+    icon: snowflakeLogo,
+    buttons: [],
+  },
+  {
     id: 'ibm',
     company: 'IBM',
     role: 'Software Developer Intern',
-    date: 'Jan 2024 - Present',
+    date: 'Jan 2024 - Apr 2024',
     location: 'Toronto, ON',
-    points: ['Recently started this exciting role on an exciting team!'],
+    points: [
+      "Architected a generative AI application for code explanation and test-case generation on <strong>12M+</strong> lines of code for <strong>100+</strong> developers using <strong>Amazon Web Services (AWS)</strong>, <strong>React.js</strong>, and IBM's WatsonX AI platform",
+      'Increased code explanation accuracy from <strong>30% to 90%</strong> by implementing retrieval-augmented generation (RAG) using <strong>LangChain</strong>, a FAISS vector database, <strong>Python</strong>, and the Mixtral 8x7B LLM',
+      'Engineered a rules-based anomaly detection system to verify <strong>$10B+</strong> in insurance claims using <strong>Python</strong> and <strong>SQL</strong>',
+    ],
     icon: ibmLogo,
     buttons: [],
   },
