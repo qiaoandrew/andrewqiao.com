@@ -20,7 +20,7 @@ export default function Navbar() {
     <NavigationMenu className="hidden font-display md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="#projects" legacyBehavior passHref>
+          <Link href="/#projects" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Projects
             </NavigationMenuLink>
@@ -63,21 +63,21 @@ export default function Navbar() {
           </NavigationMenuContent>
         </NavigationMenuItem> */}
         <NavigationMenuItem>
-          <Link href="#experiences" legacyBehavior passHref>
+          <Link href="/#experiences" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Experiences
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#about" legacyBehavior passHref>
+          <Link href="/#about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#contact" legacyBehavior passHref>
+          <Link href="/#contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact
             </NavigationMenuLink>
