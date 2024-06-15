@@ -28,19 +28,20 @@ export const PROJECT_CARDS = [
     darkMockup: pethsappDarkCardMockup,
   },
   {
+    id: 'quadratic-ui',
+    title: 'quadratic/ui',
+    href: 'https://www.quadratic-ui.com',
+    type: 'Component Library',
+    lightMockup: quadraticUICardLightMockup,
+    darkMockup: quadraticUICardDarkMockup,
+  },
+  {
     id: 'remax',
     title: 'RE/MAX',
     href: 'https://www.preconstruction.app',
     type: 'Web App',
     lightMockup: remaxCardMockup,
     darkMockup: remaxCardMockup,
-  },
-  {
-    id: 'quadratic-ui',
-    title: 'quadratic/ui',
-    type: 'Coming soon...',
-    lightMockup: quadraticUICardLightMockup,
-    darkMockup: quadraticUICardDarkMockup,
   },
   {
     id: 'uwdsc',

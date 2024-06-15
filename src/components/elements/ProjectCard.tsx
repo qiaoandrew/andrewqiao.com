@@ -7,16 +7,14 @@ import GradientBorder from '@/components/ui/GradientBorder';
 import GradientText from '@/components/typography/GradientText';
 
 interface ProjectCardProps {
-  id: string;
   title: string;
   type: string;
-  href?: string;
+  href: string;
   lightMockup: StaticImageData;
   darkMockup: StaticImageData;
 }
 
 export default function ProjectCard({
-  id,
   title,
   type,
   href,
@@ -81,16 +79,12 @@ export default function ProjectCard({
         'xl:rounded-[21px]'
       )}
     >
-      {href ? (
-        href.startsWith('/') ? (
-          <Link href={href}>{cardContent}</Link>
-        ) : (
-          <a href={href} target="_blank" rel="noreferrer noopener">
-            {cardContent}
-          </a>
-        )
+      {href.startsWith('/') ? (
+        <Link href={href}>{cardContent}</Link>
       ) : (
-        <div className="xl:hover:cursor-wait">{cardContent}</div>
+        <a href={href} target="_blank" rel="noreferrer noopener">
+          {cardContent}
+        </a>
       )}
     </GradientBorder>
   );

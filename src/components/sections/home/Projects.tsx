@@ -9,7 +9,6 @@ export default function Projects() {
       {PROJECT_CARDS.map(
         ({ id, title, href, type, lightMockup, darkMockup }) => (
           <ProjectCard
-            id={id}
             key={id}
             title={title}
             type={type}

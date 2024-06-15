@@ -24,7 +24,7 @@ export default function ThemeToggle() {
       onClick={changeTheme}
       className={cn(
         'bg-transparent shadow-none xl:hover:bg-transparent xl:hover:shadow-none',
-        'dark:bg-transparent dark:shadow-none xl:dark:hover:bg-transparent xl:dark:hover:shadow-none',
+        'dark:bg-transparent dark:shadow-none xl:dark:hover:bg-transparent xl:dark:hover:shadow-none'
       )}
     >
       <SunIcon className="h-5 w-5 text-primary-foreground dark:hidden" />
